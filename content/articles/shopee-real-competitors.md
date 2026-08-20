@@ -70,3 +70,8 @@ Are you tracking offline-to-online retail apps in your market? What did the data
 *Sample data from FoxData API snapshot, 2026-08-20. Get API access at foxdata.com/app-data-api.*
 
 *Built with the open-source [foxdata-devrel automation hub](https://github.com/benzhang568858050-cell/foxdata-devrel) ⚡ — data → content → publishing, fully automated.*
+
+## More from this series
+
+- [Sea App Market Watch](https://dev.to/_a29a85391c475e16a6bed4/building-a-southeast-asia-app-market-watch-with-the-foxdata-api-420i)
+- [Vn Vs Th Market](https://dev.to/_a29a85391c475e16a6bed4/vietnam-vs-thailand-where-should-your-app-marketing-budget-go-in-2026-1e6d)
