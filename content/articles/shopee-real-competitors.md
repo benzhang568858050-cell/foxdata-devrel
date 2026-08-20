@@ -63,6 +63,9 @@ for c in r.json()["data"]["result"][:10]:
 
 ## Discussion
 
+Questions or collaboration? Reach me at [benzhang568858050@gmail.com](mailto:benzhang568858050@gmail.com).
+
+
 Are you tracking offline-to-online retail apps in your market? What did the data show that surprised you? Share in the comments — I'll pull deeper data for the most-requested markets.
 
 ---

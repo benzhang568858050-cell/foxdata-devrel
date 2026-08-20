@@ -60,6 +60,9 @@ Pull it weekly, log the daily curves, and you'll start seeing which "winners" ar
 
 ## Discussion
 
+Questions or collaboration? Reach me at [benzhang568858050@gmail.com](mailto:benzhang568858050@gmail.com).
+
+
 Ever been burned by a viral spike that died in a week? Or do you disagree — are spikes worth chasing? Let me know in the comments.
 
 ---

@@ -88,6 +88,9 @@ print(r.json()["data"]["result"][:5])
 
 ## Discussion
 
+Questions or collaboration? Reach me at [benzhang568858050@gmail.com](mailto:benzhang568858050@gmail.com).
+
+
 What markets are you tracking for app growth in 2026? Drop a comment with the country you watch — I'll pull the numbers for the most-requested markets in the next post of this series.
 
 ---

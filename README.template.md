@@ -91,6 +91,12 @@ Data-driven developer content, weekly cadence:
 - Best publish window: UTC 13:00–18:00 (data-backed)
 - Series interlinking + discussion prompts on every article
 
+## 📬 Contact
+
+- **Email**: [benzhang568858050@gmail.com](mailto:benzhang568858050@gmail.com)
+- **GitHub**: [benzhang568858050-cell](https://github.com/benzhang568858050-cell)
+- **Dev.to**: [@_a29a85391c475e16a6bed4](https://dev.to/_a29a85391c475e16a6bed4)
+
 ## 🤝 License
 
 [MIT](LICENSE) — free to use, fork, and learn from.

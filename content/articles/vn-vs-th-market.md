@@ -53,6 +53,9 @@ Run it weekly, append to a sheet, and you get a moving picture of where SEA dema
 
 ## Discussion
 
+Questions or collaboration? Reach me at [benzhang568858050@gmail.com](mailto:benzhang568858050@gmail.com).
+
+
 Are you running apps in Vietnam or Thailand right now? Which market surprised you — in a good or bad way? Let me know in the comments, and I'll dig into specific categories for the next post.
 
 ---
