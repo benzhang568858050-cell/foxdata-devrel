@@ -48,6 +48,9 @@ jobs:
       - name: AI 运营引擎（监控+分析+救活+互链+策略）
         run: python3 auto.py devto-ops || true
 
+      - name: X 热点采集（无凭据时自动跳过）
+        run: python3 clients/collect_hotspots.py || true
+
       - name: 更新 README 索引
         run: python3 clients/github_client.py readme || true
 

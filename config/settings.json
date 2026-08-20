@@ -1,5 +1,5 @@
 {
-  "x": {"enabled": false, "min_per_day": 0, "max_per_day": 2},
+  "x": {"enabled": true, "min_per_day": 0, "max_per_day": 2},
   "devto": {"enabled": true, "max_per_day": 1},
   "ph": {"enabled": false, "max_per_day": 1},
   "window_hours": 24,

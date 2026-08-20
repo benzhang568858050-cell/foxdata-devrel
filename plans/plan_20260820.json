@@ -1,0 +1,20 @@
+{
+  "posts": [
+    {
+      "platform": "x",
+      "time": "2026-08-21T13:58:37.515321",
+      "draft": "th-keyword-war.txt",
+      "fp": "bf82248da9d980a4",
+      "text": "TH e-commerce keyword war (Aug 2026): Temu covers 16.8K keywords, SHEIN 12K, Shopee only 7.4K — yet Shopee still ranks #1.\n\nKeyword coverage is a leading indicator. When Temu's coverage converts, the #1 spot moves. Track it weekly via FoxData API.\n\n#ASO #SEA #AppMarketing",
+      "images": []
+    },
+    {
+      "platform": "x",
+      "time": "2026-08-21T11:46:39.663961",
+      "draft": "api-radar.txt",
+      "fp": "dfc9d60755d2b6c0",
+      "text": "Building a market radar? 4 FoxData API endpoints: download estimates, revenue, rank history, keyword coverage. One GET each, JSON out, AS+GP, SEA included.\n\nDaily competitor dashboard in 30 min. Details in my Dev.to post. foxdata.com/app-data-api\n\n#API #MobileGrowth",
+      "images": []
+    }
+  ]
+}
