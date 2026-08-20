@@ -26,7 +26,7 @@ def fetch():
     from clients.foxdata_client import load_key, call_api
     if not load_key():
         print("[fetch] 未配置 x_openapi_key → 跳过官方拉取")
-        print("[fetch] 提示：可在对话中调用 foxdata-aichat MCP 拉取数据后，另存为 data/raw_latest.json")
+        print("[fetch] 提示：数据获取需 FoxData API 订阅（x_openapi_key）；或对话中通过 foxdata-aichat MCP 查询（只读、消耗订阅配额）后存快照")
         return False
     try:
         snap = {"date": datetime.now().strftime("%Y-%m-%d"), "source": "foxdata-open-api"}

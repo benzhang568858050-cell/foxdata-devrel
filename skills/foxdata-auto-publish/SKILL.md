@@ -13,12 +13,17 @@ description: FoxData 数据内容自动化发布系统操作指南。当用户�
 - 轻量发布：`/mnt/user-data/workspace/bs-automation/`（Bluesky + Threads）
 - 完整指南：`docs/setup-guide.md`（凭据获取）、`docs/foxdata-content-guide.md`（内容策略）
 
-## 数据通道（二选一，自动降级）
+## 数据通道（数据获取需要 FoxData 付费订阅）
 
-| 通道 | 配置 | 适用 |
+> ⚠️ 重要：FoxData 数据服务（Open API 与 foxdata-aichat MCP）均为**只读查询**，且需要付费订阅
+> （API Solutions 计划，$59/月起，按调用次数/积分计费）。**MCP 不能发布内容**——发布走各平台官方 API（Dev.to 等免费）。
+
+| 通道 | 配置 | 说明 |
 |---|---|---|
-| **FoxData 官方 API** | `config/foxdata_creds.json` → `{"x_openapi_key": "..."}`（Base: `https://api.foxdata.com/apiv1/open-api`，Header `x-openapi-key`） | 脚本完全自主，推荐 |
-| **foxdata-aichat MCP** | 无需配置（对话内调用） | 零配置兜底，拉完存 `data/raw_latest.json` |
+| **FoxData 官方 Open API** | `config/foxdata_creds.json` → `{"x_openapi_key": "..."}`（Base: `https://api.foxdata.com/apiv1/open-api`，Header `x-openapi-key`） | 付费订阅后脚本完全自主拉数 |
+| **foxdata-aichat MCP** | 对话内调用（MCP 工具） | 只读查询接口，消耗订阅配额/积分，拉完存 `data/raw_latest.json` 供后续使用 |
+
+无订阅时：内容素材可用公开数据/人工整理代替，或等订阅开通后再启用自动拉数。
 
 官方 API 要点（见 https://docs.foxdata.com/）：
 - 端点示例：`POST /app/app-info`（body: appId/region/language）
@@ -32,7 +37,7 @@ description: FoxData 数据内容自动化发布系统操作指南。当用户�
 cd /mnt/user-data/workspace/devrel-automation
 python3 auto.py all      # 全链路：fetch(拉数据) → plan(生成计划) → publish(发布)
 python3 auto.py status   # 各平台凭据与内容状态总览
-python3 auto.py fetch    # 只拉数据（无官方 key 时提示走 MCP 通道）
+python3 auto.py fetch    # 只拉数据（需 FoxData 订阅；无 key 时跳过）
 ```
 
 ## 内容生产流程（本技能的核心价值）
@@ -90,7 +95,7 @@ cat state/published.json   # 发布记录
 
 | 情况 | 处理 |
 |---|---|
-| 无 x_openapi_key | 走 foxdata-aichat MCP 通道，对话中拉数存快照 |
+| 无 x_openapi_key（未订阅） | 跳过自动拉数；素材改用公开数据/人工整理，或开通 FoxData API 订阅 |
 | X 权重 >270 | 压缩文案（中文×2 权重） |
 | Dev.to scheduled 未到期 | 计划不包含该文章（正常） |
 | 发布失败 | 自动记日志不重试；检查凭据有效性 |
