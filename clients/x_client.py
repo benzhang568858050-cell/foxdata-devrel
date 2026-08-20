@@ -88,7 +88,11 @@ def verify():
 
 
 def post_tweet(text, image_paths=None):
-    """发布一条帖子（支持最多 4 张配图）。返回 {tweet_id, url}。"""
+    """发布一条帖子（支持最多 4 张配图）。返回 {tweet_id, url}。
+
+    底层直接调用 GraphQL（twikit 高层 create_tweet 对 errors 响应解析为 None，
+    此处显式解析错误码：344=日配额用尽 / 226=风控）。
+    """
     client = get_client()
     text = text.strip()
     if not text:
@@ -98,16 +102,35 @@ def post_tweet(text, image_paths=None):
         raise ValueError(f"X 权重超限：{w} > {MAX_WEIGHT}（中文×2，建议压缩）")
 
     async def _post():
-        media_ids = []
+        # 先上传媒体（如有）
+        media_entities = []
         if image_paths:
             for p in image_paths[:4]:
                 mid = await client.upload_media(source=str(p), wait_for_completion=True)
-                media_ids.append(mid)
-        return await client.create_tweet(text=text, media_ids=media_ids or None)
+                media_entities.append({"media_id": mid, "tagged_users": []})
+        response, _ = await client.gql.create_tweet(
+            text=text, is_note_tweet=False, media_entities=media_entities, poll_uri=None,
+            reply_to=None, attachment_url=None, community_id=None,
+            share_with_followers=False, richtext_options=None, edit_tweet_id=None,
+            limit_mode=None)
+        return response
 
-    tweet = _run(_post())
-    tid = str(tweet.id)
-    return {"tweet_id": tid, "url": f"https://x.com/i/status/{tid}"}
+    response = _run(_post())
+    errors = response.get("errors")
+    if errors:
+        code = errors[0].get("code")
+        msg = errors[0].get("message", "")[:120]
+        if code == 344:
+            raise RuntimeError(f"X 日配额用尽（344）：{msg}（UTC 重置后恢复）")
+        if code == 226:
+            raise RuntimeError(f"X 风控（226）：{msg}")
+        raise RuntimeError(f"X 发布失败（{code}）：{msg}")
+    try:
+        result = response["data"]["create_tweet"]["tweet_results"]["result"]
+        tid = result.get("rest_id") or result.get("id_str")
+    except (KeyError, TypeError):
+        raise RuntimeError(f"X 响应异常：{str(response)[:150]}")
+    return {"tweet_id": str(tid), "url": f"https://x.com/i/status/{tid}"}
 
 
 if __name__ == "__main__":
