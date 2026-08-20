@@ -1,0 +1,8 @@
+{
+  "date": "2026-08-20",
+  "source": "foxdata-aichat MCP（对话通道）",
+  "th_shopping_rank": [["Shopee", 1, 7403], ["SHEIN", 2, 11976], ["Temu", 3, 16843], ["Lazada", 4, 3860]],
+  "keyword_index": {"game": {"VN": 76, "TH": 70}, "video": {"VN": 51, "TH": 48}, "shopping": {"VN": 46, "TH": 45}},
+  "th_download_top": [["X", 1, 21175], ["Earthquake alerts", 2, 3078], ["TradingView", 3, 2750]],
+  "shopee_competitors_th": ["Lotus's", "Thisshop", "Big C PLUS", "Makro PRO", "Kaidee", "Konvy", "Central App", "Watsons TH"]
+}

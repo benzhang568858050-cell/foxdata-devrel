@@ -1,0 +1,16 @@
+# 凭据与配置文件（禁止提交到 GitHub）
+config/x_cookies.json
+config/x_creds.json
+config/devto_creds.json
+config/ph_creds.json
+config/foxdata_creds.json
+*.log
+
+# 本地依赖与缓存
+.deps/
+__pycache__/
+*.pyc
+.venv/
+
+# 封面/临时图片
+cover_*.png

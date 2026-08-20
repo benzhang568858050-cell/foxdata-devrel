@@ -1,0 +1,5 @@
+Building a market radar? 4 FoxData API endpoints: download estimates, revenue, rank history, keyword coverage. One GET each, JSON out, AS+GP, SEA included.
+
+Daily competitor dashboard in 30 min. Details in my Dev.to post. foxdata.com/app-data-api
+
+#API #MobileGrowth

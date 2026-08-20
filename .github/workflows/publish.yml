@@ -1,0 +1,51 @@
+name: DevRel Auto Publish
+
+on:
+  schedule:
+    # 每小时运行一次（UTC 时间，即北京时间每小时）
+    - cron: "17 * * * *"
+  workflow_dispatch: {}   # 支持手动触发
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 安装依赖
+        run: pip install -q twikit requests
+
+      - name: 写入凭据（GitHub Secrets）
+        env:
+          X_COOKIES: ${{ secrets.X_COOKIES }}
+          DEVTO_API_KEY: ${{ secrets.DEVTO_API_KEY }}
+          PH_TOKEN: ${{ secrets.PH_TOKEN }}
+        run: |
+          mkdir -p config
+          if [ -n "$X_COOKIES" ]; then echo "$X_COOKIES" > config/x_cookies.json; fi
+          if [ -n "$DEVTO_API_KEY" ]; then echo "{\"api_key\":\"$DEVTO_API_KEY\"}" > config/devto_creds.json; fi
+          if [ -n "$PH_TOKEN" ]; then echo "{\"token\":\"$PH_TOKEN\"}" > config/ph_creds.json; fi
+
+      - name: 一键自动化（拉数据+计划+发布）
+        run: python3 auto.py || true
+
+      - name: AI 运营引擎（监控+分析+救活+互链+策略）
+        run: python3 auto.py devto-ops || true
+
+      - name: 更新 README 索引
+        run: python3 clients/github_client.py readme || true
+
+      - name: 提交状态回仓库
+        run: |
+          git config user.name "devrel-bot"
+          git config user.email "devrel-bot@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "chore: auto publish [$(date +%Y-%m-%d)]"
+          git push || true
