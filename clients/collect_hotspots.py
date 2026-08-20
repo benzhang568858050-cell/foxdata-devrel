@@ -2,8 +2,8 @@
 """X 热点采集（矩阵选题源）：X 实时趋势 → posts/HOTSPOTS.md
 
 用法：python3 clients/collect_hotspots.py
-输出：posts/HOTSPOTS.md（供内容工厂选题参考；结合 foxdata 数据生成内容）
 """
+import asyncio
 import json
 import sys
 from datetime import datetime
@@ -23,21 +23,24 @@ def main():
         print(f"⚠️ X 未配置/登录失败，跳过热点采集：{e}")
         return False
 
-    lines = [f"# X 热点（{datetime.now().strftime('%Y-%m-%d %H:%M')}）", ""]
-    for cat in ("trending", "for-you"):
-        try:
-            trends = client.get_trends(category=cat, count=10)
-            lines.append(f"## {cat}")
-            for t in trends:
-                name = getattr(t, "name", None) or getattr(t, "trend_name", str(t))
-                if name and not name.startswith("#"):
-                    lines.append(f"- {name}")
-            lines.append("")
-        except Exception as e:
-            print(f"⚠️ {cat} 趋势获取失败：{e}")
+    async def _fetch():
+        lines = [f"# X 热点（{datetime.now().strftime('%Y-%m-%d %H:%M')}）", ""]
+        for cat in ("trending", "for-you"):
+            try:
+                trends = await client.get_trends(category=cat, count=10)
+                lines.append(f"## {cat}")
+                for t in trends:
+                    name = getattr(t, "name", None) or getattr(t, "trend_name", str(t))
+                    if name and not name.startswith("#"):
+                        lines.append(f"- {name}")
+                lines.append("")
+            except Exception as e:
+                print(f"⚠️ {cat} 趋势获取失败：{e}")
+        return "\n".join(lines)
 
+    content = asyncio.run(_fetch())
     OUT_FILE.parent.mkdir(parents=True, exist_ok=True)
-    OUT_FILE.write_text("\n".join(lines), encoding="utf-8")
+    OUT_FILE.write_text(content, encoding="utf-8")
     print(f"✅ 热点已更新：{OUT_FILE}")
     return True
 
