@@ -66,10 +66,10 @@ Requires: Python 3.10+, `pip install requests twikit` (project-local `.deps/` su
 - **Dev.to**: 2 篇文章已发布
 - **X**: 0 条短帖
 - **Product Hunt**: 0 条更新
-- **文章库**: 2 篇 | **短帖池**: 2 条
+- **文章库**: 3 篇 | **短帖池**: 2 条
 - 数据快照: `data/raw_latest.json`
 
-_自动更新: 2026-08-20 18:51 UTC_
+_自动更新: 2026-08-20_
 
 ## 📚 Documentation & Links
 

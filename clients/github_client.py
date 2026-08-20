@@ -43,7 +43,7 @@ def gen_readme():
         f"- **文章库**: {len(articles)} 篇 | **短帖池**: {len(drafts)} 条",
         "- 数据快照: `data/raw_latest.json`",
         "",
-        "_自动更新: " + datetime.now().strftime('%Y-%m-%d %H:%M UTC%z') + "_",
+        "_自动更新: " + datetime.now().strftime('%Y-%m-%d') + "_",
     ]
     status_block = "\n".join(status_lines)
 

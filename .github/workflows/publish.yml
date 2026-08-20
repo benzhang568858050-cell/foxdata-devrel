@@ -2,8 +2,9 @@ name: DevRel Auto Publish
 
 on:
   schedule:
-    # 每小时运行一次（UTC 时间，即北京时间每小时）
-    - cron: "17 * * * *"
+    # 每天 3 次（UTC 01/09/17 = 北京 09:00 / 17:00 / 次日 01:00）
+    # 降频目的：规避高频自动化提交风控 + 节省 Actions 分钟数
+    - cron: "17 1,9,17 * * *"
   workflow_dispatch: {}   # 支持手动触发
 
 permissions:
@@ -19,8 +20,16 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: 安装依赖（缓存加速）
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
       - name: 安装依赖
-        run: pip install -q twikit requests
+        run: pip install -q twikit requests || pip install -q requests
 
       - name: 写入凭据（GitHub Secrets）
         env:
@@ -42,10 +51,15 @@ jobs:
       - name: 更新 README 索引
         run: python3 clients/github_client.py readme || true
 
-      - name: 提交状态回仓库
+      - name: 仅在真实变化时提交回仓库
         run: |
           git config user.name "devrel-bot"
           git config user.email "devrel-bot@users.noreply.github.com"
           git add -A
-          git diff --cached --quiet || git commit -m "chore: auto publish [$(date +%Y-%m-%d)]"
-          git push || true
+          if git diff --cached --quiet; then
+            echo "无实质变化，跳过提交（风控保护）"
+          else
+            git commit -m "chore: sync publish state [$(date +%Y-%m-%d)]"
+            git pull --rebase origin main || true
+            git push || true
+          fi
