@@ -64,6 +64,7 @@ def status():
         ("FoxData 官方 API", "config/foxdata_creds.json"),
         ("X", "config/x_cookies.json"),
         ("Dev.to", "config/devto_creds.json"),
+        ("Hashnode", "config/hashnode_creds.json"),
         ("Product Hunt", "config/ph_creds.json"),
     ]
     for name, path in checks:

@@ -127,6 +127,10 @@ def main():
                 url = result.get("url", "")
                 # 矩阵联动：Dev.to 发布成功 → 自动生成 X 引流短帖草稿
                 _gen_x_draft(p["path"], url)
+            elif platform == "hashnode":
+                from clients.hashnode_client import publish_article as hn_publish
+                result = hn_publish(p["path"], published=True)
+                url = result.get("url", "")
             elif platform == "ph":
                 from clients.ph_client import create_post
                 pl = p.get("payload", {})

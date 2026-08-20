@@ -100,6 +100,16 @@ def main():
                 devto_due.append({"platform": "devto", "time": now.isoformat(), "draft": a.name, "fp": draft_fingerprint(a.read_text(encoding="utf-8")), "path": str(a)})
         posts.extend(devto_due)
 
+    # ========== Hashnode 长文（与 Dev.to 同源文章库） ==========
+    hn_due = []
+    if settings.get("hashnode", {}).get("enabled", True):
+        from clients.devto_client import is_due
+        for a in sorted(ARTICLES_DIR.glob("*.md")):
+            used = any(d.get("draft") == a.name for d in published.get("hashnode", []))
+            if not used and is_due(a):
+                hn_due.append({"platform": "hashnode", "time": now.isoformat(), "draft": a.name, "fp": draft_fingerprint(a.read_text(encoding="utf-8")), "path": str(a)})
+        posts.extend(hn_due)
+
     # ========== Product Hunt ==========
     ph_due = []
     if settings["ph"].get("enabled", False):
