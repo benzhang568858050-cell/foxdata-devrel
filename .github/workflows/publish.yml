@@ -35,11 +35,13 @@ jobs:
         env:
           X_COOKIES: ${{ secrets.X_COOKIES }}
           DEVTO_API_KEY: ${{ secrets.DEVTO_API_KEY }}
+          HASHDNODE_PAT: ${{ secrets.HASHDNODE_PAT }}
           PH_TOKEN: ${{ secrets.PH_TOKEN }}
         run: |
           mkdir -p config
           if [ -n "$X_COOKIES" ]; then echo "$X_COOKIES" > config/x_cookies.json; fi
           if [ -n "$DEVTO_API_KEY" ]; then echo "{\"api_key\":\"$DEVTO_API_KEY\"}" > config/devto_creds.json; fi
+          if [ -n "$HASHDNODE_PAT" ]; then echo "{\"pat\":\"$HASHDNODE_PAT\",\"publication_id\":\"6a86e7d681b62cc8b3d6ec93\"}" > config/hashnode_creds.json; fi
           if [ -n "$PH_TOKEN" ]; then echo "{\"token\":\"$PH_TOKEN\"}" > config/ph_creds.json; fi
 
       - name: 一键自动化（拉数据+计划+发布）
