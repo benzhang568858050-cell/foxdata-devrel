@@ -1,8 +1,22 @@
 {
   "x": [],
   "devto": [
-    {"draft": "sea-app-market-watch.md", "published_at": "2026-08-20", "url": "https://dev.to/_a29a85391c475e16a6bed4/building-a-southeast-asia-app-market-watch-with-the-foxdata-api-420i"},
-    {"draft": "vn-vs-th-market.md", "published_at": "2026-08-20", "url": "https://dev.to/_a29a85391c475e16a6bed4/vietnam-vs-thailand-where-should-your-app-marketing-budget-go-in-2026-1e6d"}
+    {
+      "draft": "sea-app-market-watch.md",
+      "published_at": "2026-08-20",
+      "url": "https://dev.to/_a29a85391c475e16a6bed4/building-a-southeast-asia-app-market-watch-with-the-foxdata-api-420i"
+    },
+    {
+      "draft": "vn-vs-th-market.md",
+      "published_at": "2026-08-20",
+      "url": "https://dev.to/_a29a85391c475e16a6bed4/vietnam-vs-thailand-where-should-your-app-marketing-budget-go-in-2026-1e6d"
+    },
+    {
+      "draft": "api-vs-scraper.md",
+      "fp": "2f72be84269fdf15",
+      "published_at": "2026-08-20T19:31:51.857757",
+      "url": "https://dev.to/_a29a85391c475e16a6bed4/app-data-api-vs-building-your-own-scraper-which-is-cheaper-in-2026-4pe7"
+    }
   ],
   "ph": []
 }

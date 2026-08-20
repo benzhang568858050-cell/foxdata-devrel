@@ -15,6 +15,13 @@
       "fp": "dfc9d60755d2b6c0",
       "text": "Building a market radar? 4 FoxData API endpoints: download estimates, revenue, rank history, keyword coverage. One GET each, JSON out, AS+GP, SEA included.\n\nDaily competitor dashboard in 30 min. Details in my Dev.to post. foxdata.com/app-data-api\n\n#API #MobileGrowth",
       "images": []
+    },
+    {
+      "platform": "devto",
+      "time": "2026-08-20T19:31:51.651684",
+      "draft": "api-vs-scraper.md",
+      "fp": "2f72be84269fdf15",
+      "path": "/mnt/user-data/workspace/devrel-automation/content/articles/api-vs-scraper.md"
     }
   ]
 }
