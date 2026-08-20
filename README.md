@@ -77,6 +77,18 @@ _自动更新: 2026-08-20_
 - [FoxData App Data API](https://foxdata.com/app-data-api) — subscription plans
 - [Dev.to API (Forem V1)](https://docs.forem.com/api/) — the publishing channel
 
+### 📖 Ops playbooks (in this repo)
+
+- [Dev.to Growth Playbook](docs/devto-growth-playbook.md) — engagement & exposure strategy
+- [Developer Forums Distribution Matrix](docs/developer-forums-distribution-matrix.md) — where to share content
+- [Content Strategy Guide](docs/foxdata-content-guide.md) — content mix & cadence
+- [Open Source Tools Research](docs/devto-open-source-tools-research.md) — what to reuse vs build
+
+### 🛠 Installable skills
+
+- [devto-operations](skills/devto-operations/SKILL.md) — `npx skills add benzhang568858050-cell/foxdata-devrel`
+- [foxdata-auto-publish](skills/foxdata-auto-publish/SKILL.md) — same package, two skills
+
 ## 🧠 Content Strategy
 
 Data-driven developer content, weekly cadence:
