@@ -47,7 +47,7 @@ This is the case for monitoring tools: **rankings show the scoreboard; competito
 
 - If you compete with Shopee in Thailand, your threat model is wrong if it only includes marketplaces. **Monitor Lotus's, Big C and Makro the same way you monitor Temu.**
 - These chains have offline distribution advantages — expect them to invest heavily in app retention mechanics (membership, delivery speed), not just acquisition.
-- For other SEA markets, run the same analysis: the `competitor` endpoint is one POST away.
+- For other SEA markets, run the same analysis: the `competitor` endpoint is one POST away via this [app market data API](https://foxdata.com/en/app-data-api/).
 
 ```python
 import requests

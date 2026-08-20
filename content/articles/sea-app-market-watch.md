@@ -16,7 +16,7 @@ This post shows a real case: how to build a Southeast Asia market watch in 30 mi
 
 ## Step 1 — Download Estimates
 
-Thailand App Store download ranking (2026-08-20):
+Thailand App Store download ranking (2026-08-20, via the [FoxData App Data API](https://foxdata.com/en/app-data-api/)):
 
 | Rank | App | Weekly downloads | Note |
 |---|---|---|---|

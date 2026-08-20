@@ -36,7 +36,7 @@ Here's the demand side of the answer, straight from App Store search index data:
 
 ## How to keep this updated
 
-This isn't a one-time analysis. The same comparison is one API call away, every day:
+This isn't a one-time analysis. The same comparison is one call to the [FoxData API](https://foxdata.com/en/app-data-api/) away, every day:
 
 ```python
 import requests
