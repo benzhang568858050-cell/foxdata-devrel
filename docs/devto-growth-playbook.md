@@ -27,7 +27,7 @@ Dev.to **没有强算法推荐流**，曝光主要来自四个入口：
 | 项 | 动作 | 影响 |
 |---|---|---|
 | 头像 | 换 FoxData logo 或统一品牌头像 | 可信度 |
-| 简介 | 一句话定位 + 链接（foxdata.com/app-data-api） | 引流入口 |
+| 简介 | 一句话定位 + 链接（https://foxdata.com/en/app-data-api/） | 引流入口 |
 | website_url | 填 FoxData 官网 | SEO 回链 |
 | 社交链接 | 关联 X / GitHub / Bluesky / LinkedIn | 交叉引流 |
 | 组织（Organization） | 如有公司主体，创建 organization 发帖 | 品牌聚合 |

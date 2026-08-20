@@ -92,7 +92,7 @@ What markets are you tracking for app growth in 2026? Drop a comment with the co
 
 ---
 
-*Sample data from FoxData API snapshot, 2026-08-20. Get API access at foxdata.com/app-data-api.*
+*Sample data from FoxData API snapshot, 2026-08-20. Get API access at [foxdata.com/en/app-data-api](https://foxdata.com/en/app-data-api/).*
 
 ## More from this series
 

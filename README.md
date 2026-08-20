@@ -2,7 +2,7 @@
 
 # 📨 FoxData API · DevRel Content Hub
 
-**Automated developer content operations powered by [FoxData API](https://foxdata.com/app-data-api) — app market data → AI content → Dev.to publishing → growth ops.**
+**Automated developer content operations powered by [FoxData API](https://foxdata.com/en/app-data-api/) — app market data → AI content → Dev.to publishing → growth ops.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-green.svg)](https://python.org)
@@ -74,7 +74,7 @@ _自动更新: 2026-08-20_
 ## 📚 Documentation & Links
 
 - [FoxData Open API docs](https://docs.foxdata.com/) — authentication (`x-openapi-key`), endpoints, error codes
-- [FoxData App Data API](https://foxdata.com/app-data-api) — subscription plans
+- [FoxData App Data API](https://foxdata.com/en/app-data-api/) — subscription plans
 - [Dev.to API (Forem V1)](https://docs.forem.com/api/) — the publishing channel
 
 ### 📖 Ops playbooks (in this repo)

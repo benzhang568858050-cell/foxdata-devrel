@@ -57,7 +57,7 @@ Are you running apps in Vietnam or Thailand right now? Which market surprised yo
 
 ---
 
-*Sample data from FoxData API snapshot, 2026-08-20. Get API access at foxdata.com/app-data-api.*
+*Sample data from FoxData API snapshot, 2026-08-20. Get API access at [foxdata.com/en/app-data-api](https://foxdata.com/en/app-data-api/).*
 
 ## More from this series
 
