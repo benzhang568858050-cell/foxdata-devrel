@@ -88,6 +88,7 @@ _自动更新: 2026-08-20_
 
 - [devto-operations](skills/devto-operations/SKILL.md) — `npx skills add benzhang568858050-cell/foxdata-devrel`
 - [foxdata-auto-publish](skills/foxdata-auto-publish/SKILL.md) — same package, two skills
+- [x-automation](skills/x-automation/SKILL.md) — X account automation (matrix edition)
 
 ## 🧠 Content Strategy
 

@@ -82,6 +82,7 @@ Requires: Python 3.10+, `pip install requests twikit` (project-local `.deps/` su
 
 - [devto-operations](skills/devto-operations/SKILL.md) — `npx skills add benzhang568858050-cell/foxdata-devrel`
 - [foxdata-auto-publish](skills/foxdata-auto-publish/SKILL.md) — same package, two skills
+- [x-automation](skills/x-automation/SKILL.md) — X account automation (matrix edition)
 
 ## 🧠 Content Strategy
 
