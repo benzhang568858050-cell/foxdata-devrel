@@ -63,10 +63,10 @@ Requires: Python 3.10+, `pip install requests twikit` (project-local `.deps/` su
 
 ## 📊 Publish Status
 
-- **Dev.to**: 2 篇文章已发布
+- **Dev.to**: 3 篇文章已发布
 - **X**: 0 条短帖
 - **Product Hunt**: 0 条更新
-- **文章库**: 6 篇 | **短帖池**: 2 条
+- **文章库**: 7 篇 | **短帖池**: 3 条
 - 数据快照: `data/raw_latest.json`
 
 _自动更新: 2026-08-20_

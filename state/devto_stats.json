@@ -36,9 +36,78 @@
           "checked_at": "2026-08-20T10:58:37.214729"
         }
       ]
+    },
+    {
+      "time": "2026-08-20T11:46:26.417695",
+      "snapshot": [
+        {
+          "id": 4444304,
+          "title": "App Data API vs Building Your Own Scraper: Which Is Cheaper in 2026?",
+          "url": "https://dev.to/_a29a85391c475e16a6bed4/app-data-api-vs-building-your-own-scraper-which-is-cheaper-in-2026-4pe7",
+          "tags": [
+            "api",
+            "data",
+            "aso",
+            "comparison"
+          ],
+          "views": 0,
+          "reactions": 0,
+          "comments": 0,
+          "published_at": "2026-08-20T11:31:52.975Z",
+          "checked_at": "2026-08-20T11:46:26.417676"
+        },
+        {
+          "id": 4442355,
+          "title": "Vietnam vs Thailand: Where Should Your App Marketing Budget Go in 2026?",
+          "url": "https://dev.to/_a29a85391c475e16a6bed4/vietnam-vs-thailand-where-should-your-app-marketing-budget-go-in-2026-1e6d",
+          "tags": [
+            "api",
+            "aso",
+            "data",
+            "marketing"
+          ],
+          "views": 0,
+          "reactions": 0,
+          "comments": 0,
+          "published_at": "2026-08-20T08:33:08.655Z",
+          "checked_at": "2026-08-20T11:46:26.417689"
+        },
+        {
+          "id": 4442354,
+          "title": "Building a Southeast Asia App Market Watch with the FoxData API",
+          "url": "https://dev.to/_a29a85391c475e16a6bed4/building-a-southeast-asia-app-market-watch-with-the-foxdata-api-420i",
+          "tags": [
+            "api",
+            "aso",
+            "mobile",
+            "data"
+          ],
+          "views": 0,
+          "reactions": 0,
+          "comments": 0,
+          "published_at": "2026-08-20T08:33:07.809Z",
+          "checked_at": "2026-08-20T11:46:26.417693"
+        }
+      ]
     }
   ],
   "latest": [
+    {
+      "id": 4444304,
+      "title": "App Data API vs Building Your Own Scraper: Which Is Cheaper in 2026?",
+      "url": "https://dev.to/_a29a85391c475e16a6bed4/app-data-api-vs-building-your-own-scraper-which-is-cheaper-in-2026-4pe7",
+      "tags": [
+        "api",
+        "data",
+        "aso",
+        "comparison"
+      ],
+      "views": 0,
+      "reactions": 0,
+      "comments": 0,
+      "published_at": "2026-08-20T11:31:52.975Z",
+      "checked_at": "2026-08-20T11:46:26.417676"
+    },
     {
       "id": 4442355,
       "title": "Vietnam vs Thailand: Where Should Your App Marketing Budget Go in 2026?",
@@ -53,7 +122,7 @@
       "reactions": 0,
       "comments": 0,
       "published_at": "2026-08-20T08:33:08.655Z",
-      "checked_at": "2026-08-20T10:58:37.214723"
+      "checked_at": "2026-08-20T11:46:26.417689"
     },
     {
       "id": 4442354,
@@ -69,7 +138,7 @@
       "reactions": 0,
       "comments": 0,
       "published_at": "2026-08-20T08:33:07.809Z",
-      "checked_at": "2026-08-20T10:58:37.214729"
+      "checked_at": "2026-08-20T11:46:26.417693"
     }
   ]
 }
