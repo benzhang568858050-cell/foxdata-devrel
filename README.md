@@ -66,7 +66,7 @@ Requires: Python 3.10+, `pip install requests twikit` (project-local `.deps/` su
 - **Dev.to**: 2 篇文章已发布
 - **X**: 0 条短帖
 - **Product Hunt**: 0 条更新
-- **文章库**: 4 篇 | **短帖池**: 2 条
+- **文章库**: 6 篇 | **短帖池**: 2 条
 - 数据快照: `data/raw_latest.json`
 
 _自动更新: 2026-08-20_
@@ -82,6 +82,7 @@ _自动更新: 2026-08-20_
 - [Dev.to Growth Playbook](docs/devto-growth-playbook.md) — engagement & exposure strategy
 - [Developer Forums Distribution Matrix](docs/developer-forums-distribution-matrix.md) — where to share content
 - [Content Strategy Guide](docs/foxdata-content-guide.md) — content mix & cadence
+- [AI-SEO Guide](docs/ai-seo-guide.md) — AI-search citation optimization
 - [Open Source Tools Research](docs/devto-open-source-tools-research.md) — what to reuse vs build
 
 ### 🛠 Installable skills

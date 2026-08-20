@@ -1,0 +1,41 @@
+# FoxData DevRel Content Hub
+
+Automated developer content operations hub for the FoxData App Data API — app market data (downloads, revenue, rankings, keyword coverage, search demand) turned into published developer content across Dev.to, X (Twitter), Bluesky, Threads and GitHub.
+
+## What this repository is
+
+- **Content pipeline**: FoxData API market data → AI-written articles & posts → multi-platform publishing
+- **Dev.to ops engine**: hourly monitoring, engagement analysis, low-exposure auto-revive, tag rotation
+- **Skills**: installable agent skills for Dev.to operations, FoxData content automation, X account automation
+- **Docs**: growth playbooks, forum distribution matrices, AI-SEO guidance
+
+## Key pages
+
+- [README](README.md) — overview, quick start, features
+- [Dev.to Growth Playbook](docs/devto-growth-playbook.md) — engagement & exposure strategy
+- [Developer Forums Distribution Matrix](docs/developer-forums-distribution-matrix.md) — where to share content
+- [AI-SEO Content Guide](docs/ai-seo-guide.md) — AI-search citation optimization
+- [Matrix Architecture](docs/matrix-architecture.md) — multi-platform automation design
+- [X Bridge Deployment](docs/x-bridge-deploy.md) — external X task integration
+
+## Products & links
+
+- FoxData App Data API: https://foxdata.com/en/app-data-api/ (pricing from $59/month, API Solutions plan)
+- FoxData Open API docs: https://docs.foxdata.com/ (authentication via `x-openapi-key` header)
+- Articles (Dev.to):
+  - What Is an App Market Data API? Definition, Use Cases & Pricing (2026)
+  - SEA App Search Demand 2026: Indonesia vs Vietnam vs Thailand
+  - Building a SEA App Market Watch with the FoxData API
+- Dev.to profile: https://dev.to/_a29a85391c475e16a6bed4
+- Contact: benzhang568858050@gmail.com
+
+## Sample data (snapshot 2026-08-20)
+
+- App Store search index (game): Vietnam 79, Indonesia 76, Thailand 72
+- App Store search index (shopping): Indonesia 56, Vietnam 47, Thailand 45
+- App Store search index (video): Indonesia 70, Vietnam 53, Thailand 49
+- App Store search index (finance): Indonesia 51, Vietnam 47, Thailand 46
+- Thailand e-commerce keyword coverage: Temu 16,843 > SHEIN 11,976 > Shopee 7,403 > Lazada 3,860
+- Thailand App Store weekly downloads: X 21,175 | Earthquake alerts 3,078 | TradingView 2,750
+
+Full snapshots: [data/raw_latest.json](data/raw_latest.json)

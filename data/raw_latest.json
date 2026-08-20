@@ -1,8 +1,107 @@
 {
   "date": "2026-08-20",
   "source": "foxdata-aichat MCP（对话通道）",
-  "th_shopping_rank": [["Shopee", 1, 7403], ["SHEIN", 2, 11976], ["Temu", 3, 16843], ["Lazada", 4, 3860]],
-  "keyword_index": {"game": {"VN": 76, "TH": 70}, "video": {"VN": 51, "TH": 48}, "shopping": {"VN": 46, "TH": 45}},
-  "th_download_top": [["X", 1, 21175], ["Earthquake alerts", 2, 3078], ["TradingView", 3, 2750]],
-  "shopee_competitors_th": ["Lotus's", "Thisshop", "Big C PLUS", "Makro PRO", "Kaidee", "Konvy", "Central App", "Watsons TH"]
+  "th_shopping_rank": [
+    [
+      "Shopee",
+      1,
+      7403
+    ],
+    [
+      "SHEIN",
+      2,
+      11976
+    ],
+    [
+      "Temu",
+      3,
+      16843
+    ],
+    [
+      "Lazada",
+      4,
+      3860
+    ]
+  ],
+  "keyword_index": {
+    "game": {
+      "VN": 79,
+      "ID": 76,
+      "TH": 72
+    },
+    "video": {
+      "VN": 53,
+      "ID": 70,
+      "TH": 49
+    },
+    "shopping": {
+      "VN": 47,
+      "ID": 56,
+      "TH": 45
+    },
+    "finance": {
+      "VN": 47,
+      "ID": 51,
+      "TH": 46
+    }
+  },
+  "th_download_top": [
+    [
+      "X",
+      1,
+      21175
+    ],
+    [
+      "Earthquake alerts",
+      2,
+      3078
+    ],
+    [
+      "TradingView",
+      3,
+      2750
+    ]
+  ],
+  "shopee_competitors_th": [
+    "Lotus's",
+    "Thisshop",
+    "Big C PLUS",
+    "Makro PRO",
+    "Kaidee",
+    "Konvy",
+    "Central App",
+    "Watsons TH"
+  ],
+  "id_finance_top": [
+    [
+      "Indodana",
+      1,
+      1411
+    ],
+    [
+      "SINGA FINTECH",
+      2,
+      1138
+    ],
+    [
+      "Danaku",
+      3,
+      966
+    ],
+    [
+      "Easycash",
+      4,
+      1310
+    ],
+    [
+      "Kredit Pintar",
+      5,
+      1247
+    ],
+    [
+      "Kredivo",
+      24,
+      2199
+    ]
+  ]
 }

@@ -76,6 +76,7 @@ Requires: Python 3.10+, `pip install requests twikit` (project-local `.deps/` su
 - [Dev.to Growth Playbook](docs/devto-growth-playbook.md) — engagement & exposure strategy
 - [Developer Forums Distribution Matrix](docs/developer-forums-distribution-matrix.md) — where to share content
 - [Content Strategy Guide](docs/foxdata-content-guide.md) — content mix & cadence
+- [AI-SEO Guide](docs/ai-seo-guide.md) — AI-search citation optimization
 - [Open Source Tools Research](docs/devto-open-source-tools-research.md) — what to reuse vs build
 
 ### 🛠 Installable skills
