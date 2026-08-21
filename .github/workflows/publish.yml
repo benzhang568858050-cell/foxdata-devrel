@@ -2,9 +2,8 @@ name: DevRel Auto Publish
 
 on:
   schedule:
-    # 每天 3 次（UTC 01/09/17 = 北京 09:00 / 17:00 / 次日 01:00）
-    # 降频目的：规避高频自动化提交风控 + 节省 Actions 分钟数
-    - cron: "17 1,9,17 * * *"
+    # 每 3 小时一次（8 窗口容错，防止 cron 偶发缺失导致漏发）
+    - cron: "17 */3 * * *"
   workflow_dispatch: {}   # 支持手动触发
 
 permissions:
