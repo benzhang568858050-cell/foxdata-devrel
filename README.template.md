@@ -63,7 +63,11 @@ Requires: Python 3.10+, `pip install requests twikit` (project-local `.deps/` su
 
 ## 🔍 Keywords
 
-social media automation · content automation pipeline · **app market intelligence** · **Sensor Tower alternative** · **AppTweak alternative** · app market data API · Dev.to automation · developer content ops · self-hosted automation · open-source alternative · ASO tools automation · DevRel toolkit · blog automation · markdown publishing · GitHub Actions workflow · LLM agents · twitter/x automation
+**App data APIs**: app data API · app download API · app revenue API · app store data API · google play data API · app market data API · app intelligence API · app analytics API
+
+**Ads & ASO**: app ads data · Apple Search Ads (ASA) · ASO tools · app store optimization · keyword research API · app ranking API · download estimates API · revenue estimates API
+
+**Automation & DevRel**: social media automation · content automation pipeline · Dev.to automation · developer content ops · self-hosted automation · open-source alternative · DevRel toolkit · blog automation · markdown publishing · GitHub Actions workflow · LLM agents
 
 ---
 ## 📊 Publish Status
