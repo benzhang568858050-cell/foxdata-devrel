@@ -1,0 +1,2 @@
+requests>=2.28
+twikit>=2.3.0
