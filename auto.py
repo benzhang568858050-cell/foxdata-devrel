@@ -60,16 +60,22 @@ def status():
     print("=" * 56)
     print("devrel-automation · 一键自动化状态")
     print("=" * 56)
+    settings = json.loads((BASE_DIR / "config" / "settings.json").read_text()) if (BASE_DIR / "config" / "settings.json").exists() else {}
     checks = [
-        ("FoxData 官方 API", "config/foxdata_creds.json"),
-        ("X", "config/x_cookies.json"),
-        ("Dev.to", "config/devto_creds.json"),
-        ("Hashnode", "config/hashnode_creds.json"),
-        ("Product Hunt", "config/ph_creds.json"),
+        ("FoxData 官方 API", "config/foxdata_creds.json", None),
+        ("X", "config/x_cookies.json", settings.get("x", {}).get("enabled", True)),
+        ("Dev.to", "config/devto_creds.json", settings.get("devto", {}).get("enabled", True)),
+        ("Hashnode", "config/hashnode_creds.json", settings.get("hashnode", {}).get("enabled", True)),
+        ("Product Hunt", "config/ph_creds.json", settings.get("ph", {}).get("enabled", True)),
     ]
-    for name, path in checks:
+    for name, path, enabled in checks:
         ok = (BASE_DIR / path).exists()
-        print(f"  {'✅' if ok else '⬜'} {name}")
+        if enabled is False:
+            print(f"  ⏸️ {name}（已停用）")
+        elif ok:
+            print(f"  ✅ {name}")
+        else:
+            print(f"  ⬜ {name}")
     drafts = list((BASE_DIR / "posts" / "drafts").glob("*.txt"))
     arts = list((BASE_DIR / "content" / "articles").glob("*.md"))
     snap = SNAPSHOT_FILE.exists()
