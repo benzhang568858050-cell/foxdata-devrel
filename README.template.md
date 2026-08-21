@@ -63,7 +63,7 @@ Requires: Python 3.10+, `pip install requests twikit` (project-local `.deps/` su
 
 ## 🔍 Keywords
 
-social media automation · content automation pipeline · app market data API · Dev.to automation · developer content ops · self-hosted automation · open-source alternative · ASO tools automation · DevRel toolkit · blog automation · markdown publishing · GitHub Actions workflow · LLM agents · twitter/x automation
+social media automation · content automation pipeline · **app market intelligence** · **Sensor Tower alternative** · **AppTweak alternative** · app market data API · Dev.to automation · developer content ops · self-hosted automation · open-source alternative · ASO tools automation · DevRel toolkit · blog automation · markdown publishing · GitHub Actions workflow · LLM agents · twitter/x automation
 
 ---
 ## 📊 Publish Status
