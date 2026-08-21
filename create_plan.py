@@ -42,6 +42,19 @@ def draft_fingerprint(text):
     return hashlib.sha256(text.strip().encode("utf-8")).hexdigest()[:16]
 
 
+def random_pub_time(sched_date, now):
+    """风控合理的随机发布时间：
+    - 今天到期：从现在起 1-10 小时内随机（模拟作者当日发布，不规律）
+    - 未来日期：当天 08:00-22:00 随机时刻（避开凌晨，模拟人类作息）
+    """
+    if sched_date <= now.date():
+        t = now + timedelta(minutes=random.randint(60, 600))
+    else:
+        day = datetime.combine(sched_date, datetime.min.time())
+        t = day + timedelta(hours=random.randint(8, 21), minutes=random.randint(0, 59))
+    return t.isoformat()
+
+
 def pick_images(n=1):
     exts = {".png", ".jpg", ".jpeg", ".webp"}
     imgs = [p for p in IMAGES_DIR.iterdir() if p.suffix.lower() in exts] if IMAGES_DIR.exists() else []
@@ -97,7 +110,10 @@ def main():
         for a in sorted(ARTICLES_DIR.glob("*.md")):
             used = any(d.get("draft") == a.name for d in published.get("devto", []))
             if not used and is_due(a):
-                devto_due.append({"platform": "devto", "time": now.isoformat(), "draft": a.name, "fp": draft_fingerprint(a.read_text(encoding="utf-8")), "path": str(a)})
+                from clients.devto_client import parse_frontmatter
+                meta, _ = parse_frontmatter(a.read_text(encoding="utf-8"))
+                sched_date = datetime.fromisoformat(meta.get("scheduled", "")).date() if meta.get("scheduled") else now.date()
+                devto_due.append({"platform": "devto", "time": random_pub_time(sched_date, now), "draft": a.name, "fp": draft_fingerprint(a.read_text(encoding="utf-8")), "path": str(a)})
         posts.extend(devto_due)
 
     # ========== Hashnode 长文（与 Dev.to 同源文章库） ==========
@@ -107,7 +123,10 @@ def main():
         for a in sorted(ARTICLES_DIR.glob("*.md")):
             used = any(d.get("draft") == a.name for d in published.get("hashnode", []))
             if not used and is_due(a):
-                hn_due.append({"platform": "hashnode", "time": now.isoformat(), "draft": a.name, "fp": draft_fingerprint(a.read_text(encoding="utf-8")), "path": str(a)})
+                from clients.devto_client import parse_frontmatter
+                meta, _ = parse_frontmatter(a.read_text(encoding="utf-8"))
+                sched_date = datetime.fromisoformat(meta.get("scheduled", "")).date() if meta.get("scheduled") else now.date()
+                hn_due.append({"platform": "hashnode", "time": random_pub_time(sched_date, now), "draft": a.name, "fp": draft_fingerprint(a.read_text(encoding="utf-8")), "path": str(a)})
         posts.extend(hn_due)
 
     # ========== Product Hunt ==========
