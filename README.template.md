@@ -61,6 +61,11 @@ Requires: Python 3.10+, `pip install requests twikit` (project-local `.deps/` su
 └── .github/workflows/     # Hourly auto-publish pipeline
 ```
 
+## 🔍 Keywords
+
+social media automation · content automation pipeline · app market data API · Dev.to automation · developer content ops · self-hosted automation · open-source alternative · ASO tools automation · DevRel toolkit · blog automation · markdown publishing · GitHub Actions workflow · LLM agents · twitter/x automation
+
+---
 ## 📊 Publish Status
 
 {{PUBLISH_STATUS}}
