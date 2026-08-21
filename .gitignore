@@ -4,6 +4,7 @@ config/x_creds.json
 config/devto_creds.json
 config/ph_creds.json
 config/foxdata_creds.json
+config/hashnode_creds.json
 *.log
 
 # 本地依赖与缓存
