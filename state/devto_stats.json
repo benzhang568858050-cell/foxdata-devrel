@@ -678,6 +678,75 @@
           "checked_at": "2026-08-21T19:34:36.088617"
         }
       ]
+    },
+    {
+      "time": "2026-08-21T21:58:52.084434",
+      "snapshot": [
+        {
+          "id": 4449040,
+          "title": "Shopee's Real Competitors Aren't SHEIN or Temu — The Data Says Lotus's and Big C",
+          "url": "https://dev.to/_a29a85391c475e16a6bed4/shopees-real-competitors-arent-shein-or-temu-the-data-says-lotuss-and-big-c-2696",
+          "tags": [
+            "api",
+            "aso",
+            "data",
+            "ecommerce"
+          ],
+          "views": 0,
+          "reactions": 0,
+          "comments": 0,
+          "published_at": "2026-08-21T02:45:56.490Z",
+          "checked_at": "2026-08-21T21:58:52.084416"
+        },
+        {
+          "id": 4444304,
+          "title": "'game' search demand: Vietnam 7 pts higher — App Data API vs Building Your Own Scraper",
+          "url": "https://dev.to/_a29a85391c475e16a6bed4/app-data-api-vs-building-your-own-scraper-which-is-cheaper-in-2026-4pe7",
+          "tags": [
+            "api",
+            "data",
+            "aso",
+            "comparison"
+          ],
+          "views": 0,
+          "reactions": 0,
+          "comments": 0,
+          "published_at": "2026-08-20T11:31:52.975Z",
+          "checked_at": "2026-08-21T21:58:52.084428"
+        },
+        {
+          "id": 4442355,
+          "title": "'game' search demand: Vietnam 7 pts higher — Vietnam vs Thailand",
+          "url": "https://dev.to/_a29a85391c475e16a6bed4/vietnam-vs-thailand-where-should-your-app-marketing-budget-go-in-2026-1e6d",
+          "tags": [
+            "api",
+            "aso",
+            "data",
+            "marketing"
+          ],
+          "views": 0,
+          "reactions": 0,
+          "comments": 0,
+          "published_at": "2026-08-20T08:33:08.655Z",
+          "checked_at": "2026-08-21T21:58:52.084430"
+        },
+        {
+          "id": 4442354,
+          "title": "'game' search demand: Vietnam 7 pts higher — Building a Southeast Asia App Market Watch…",
+          "url": "https://dev.to/_a29a85391c475e16a6bed4/building-a-southeast-asia-app-market-watch-with-the-foxdata-api-420i",
+          "tags": [
+            "api",
+            "aso",
+            "mobile",
+            "data"
+          ],
+          "views": 0,
+          "reactions": 0,
+          "comments": 0,
+          "published_at": "2026-08-20T08:33:07.809Z",
+          "checked_at": "2026-08-21T21:58:52.084432"
+        }
+      ]
     }
   ],
   "latest": [
@@ -695,7 +764,7 @@
       "reactions": 0,
       "comments": 0,
       "published_at": "2026-08-21T02:45:56.490Z",
-      "checked_at": "2026-08-21T19:34:36.088604"
+      "checked_at": "2026-08-21T21:58:52.084416"
     },
     {
       "id": 4444304,
@@ -711,7 +780,7 @@
       "reactions": 0,
       "comments": 0,
       "published_at": "2026-08-20T11:31:52.975Z",
-      "checked_at": "2026-08-21T19:34:36.088614"
+      "checked_at": "2026-08-21T21:58:52.084428"
     },
     {
       "id": 4442355,
@@ -727,7 +796,7 @@
       "reactions": 0,
       "comments": 0,
       "published_at": "2026-08-20T08:33:08.655Z",
-      "checked_at": "2026-08-21T19:34:36.088616"
+      "checked_at": "2026-08-21T21:58:52.084430"
     },
     {
       "id": 4442354,
@@ -743,7 +812,7 @@
       "reactions": 0,
       "comments": 0,
       "published_at": "2026-08-20T08:33:07.809Z",
-      "checked_at": "2026-08-21T19:34:36.088617"
+      "checked_at": "2026-08-21T21:58:52.084432"
     }
   ]
 }
