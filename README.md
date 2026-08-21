@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/social-card.png" alt="FoxData DevRel Content Hub" width="640">
+
 # 📨 FoxData API · DevRel Content Hub
 
 **Automated developer content operations powered by [FoxData API](https://foxdata.com/en/app-data-api/) — app market data → AI content → Dev.to publishing → growth ops.**
@@ -26,13 +28,24 @@ An open-source automation system that turns **app store market data** ([FoxData 
 - ⏰ **Free scheduling** — GitHub Actions cron, no server needed
 - 🗂 **Content hub** — the repo itself is the content CMS (articles, drafts, data snapshots)
 
+## 🎯 Who is this for?
+
+- **DevRel / Developer Marketing teams** promoting an app data API or ASO tool
+- **ASO managers** who want market data piped into content automatically
+- **Indie developers** building a content engine around app market intelligence
+- **Open-source DevRel practitioners** looking for a self-hosted alternative to paid social scheduling tools
+
 ## ⚡ Quick Start
 
 ```bash
 git clone https://github.com/benzhang568858050-cell/foxdata-devrel
 cd foxdata-devrel
+pip install -r requirements.txt
 
-# 1. Configure credentials (config/ dir, git-ignored)
+# 1. Interactive setup (creates credential files, validates)
+bash setup.sh
+
+# Or manually: configure credentials (config/ dir, git-ignored)
 #    config/devto_creds.json: {"api_key": "..."}  → dev.to Settings → API Keys
 
 # 2. One-command automation: fetch data → plan → publish
@@ -43,6 +56,18 @@ python3 auto.py devto-ops
 ```
 
 Requires: Python 3.10+, `pip install requests twikit` (project-local `.deps/` supported).
+
+## 🏗 Architecture
+
+```mermaid
+flowchart TD
+    A[FoxData API<br/>market data] --> B[Content Factory<br/>AI articles + posts]
+    B --> C[Dev.to<br/>Forem API V1]
+    B --> D[X / Bluesky<br/>promo drafts]
+    C --> E[AI Ops Engine<br/>monitor / revive / strategy]
+    E --> F[GitHub Actions<br/>auto-schedule 8x/day]
+    F --> A
+```
 
 ## 📁 Project Structure
 
