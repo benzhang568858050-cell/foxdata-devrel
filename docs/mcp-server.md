@@ -79,6 +79,6 @@ FoxData MCP: get_app_asa_keywords → shoppee (corr 81), shein (55), 7-Eleven (6
 
 ## Contact
 
-- Trial access: hai.zhou@xiaoxitech.com
+- **MCP / trial access**: hai.zhou@xiaoxitech.com (or WeChat: `wish_568858050`)
 - API docs: https://docs.foxdata.com/
 - Product: https://foxdata.com/en/app-data-api/
