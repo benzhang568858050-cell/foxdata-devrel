@@ -1,149 +1,81 @@
 <div align="center">
 
-<img src="assets/social-card.png" alt="FoxData DevRel Content Hub" width="640">
+<img src="assets/social-card.png" alt="FoxData App Store Data API" width="640">
 
-# 📨 FoxData API · DevRel Content Hub
+# 📊 FoxData App Store Data API · iOS & Google Play
 
-**iOS & Google Play app store data API — downloads, revenue, rankings, keywords, ad & competitor intelligence via [FoxData API](https://foxdata.com/en/app-data-api/). Plus an open-source automation hub: store data → AI content → Dev.to publishing → growth ops.**
+**Call the FoxData API for iOS (App Store) and Google Play app data — downloads, revenue, rankings, keyword coverage, search demand, competitor lists, ratings, version logs and ASA ad intelligence across 200+ countries.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/benzhang568858050-cell/App-data-IOS-GP-?style=flat&logo=github)](https://github.com/benzhang568858050-cell/App-data-IOS-GP-)
 [![Last commit](https://img.shields.io/github/last-commit/benzhang568858050-cell/App-data-IOS-GP-)](https://github.com/benzhang568858050-cell/App-data-IOS-GP-/commits/main)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-green.svg)](https://python.org)
-[![Workflow](https://img.shields.io/github/actions/workflow/status/benzhang568858050-cell/App-data-IOS-GP-/publish.yml?label=auto-publish)](.github/workflows/publish.yml)
 
-*Self-hosted, free, one command: `python3 auto.py`*
+*API docs: [docs.foxdata.com](https://docs.foxdata.com/) · Product: [foxdata.com/en/app-data-api](https://foxdata.com/en/app-data-api/)*
 
 </div>
 
 ## 🚀 What is this?
 
-An open-source automation system around the **FoxData App Store Data API** ([docs](https://docs.foxdata.com/)) — the API delivers **iOS (App Store) and Google Play** app data: downloads, revenue, rankings, keyword coverage, search demand, competitor lists, ratings and version logs across 200+ countries. This repo turns that data into published developer content automatically.
+This repository is a **content hub for the FoxData App Store Data API**: real data pulled from the API (iOS + Google Play), with working code examples, analysis and tutorials.
 
-**Key features:**
+**What the FoxData API provides:**
 
-- 🤖 **AI content pipeline** — real market data → data-driven articles & posts (SEO-friendly titles, series interlinking, discussion prompts)
-- 📝 **Dev.to automation** — publish long-form articles via the official Forem API (V1), with dedup & interval protection
-- 📈 **AI ops engine** — hourly monitoring, engagement analysis, low-exposure auto-revive (title optimization), tag rotation strategy
-- 🔁 **Multi-platform ready** — X (Twitter), Product Hunt, Bluesky, Threads clients included
-- ⏰ **Free scheduling** — GitHub Actions cron, no server needed
-- 🗂 **Content hub** — the repo itself is the content CMS (articles, drafts, data snapshots)
+| Data type | Endpoint family | Example |
+|---|---|---|
+| Download estimates | `app/download-ranking` | X (TH): 21,175/week |
+| Revenue estimates | `app/revenue-info` | per-country totals |
+| Rankings | `app/rank` | #1-#500 by category |
+| Keyword coverage | `app/coverage-keywords` | Temu: 16,843 keywords |
+| Search demand index | `app/search-index-ranking` | shopping: ID 56 vs TH 45 |
+| Competitor lists | `app/competitor` | Shopee TH → Lotus's, Big C |
+| Ratings & reviews | `app/rate` | 4.7★, 1,345,323 ratings |
+| Version logs | `app/version-info` | 14 releases in 90 days |
+| ASA bid keywords | `app/asa-keywords` | shein corr 55, shoppee corr 81 |
 
-## 🎯 Who is this for?
-
-- **DevRel / Developer Marketing teams** promoting an app data API or ASO tool
-- **ASO managers** who want market data piped into content automatically
-- **Indie developers** building a content engine around app market intelligence
-- **Open-source DevRel practitioners** looking for a self-hosted alternative to paid social scheduling tools
+Coverage: **200+ countries**, App Store (iOS) and Google Play, 99.9% SLA.
 
 ## ⚡ Quick Start
 
 ```bash
-git clone https://github.com/benzhang568858050-cell/foxdata-devrel
-cd foxdata-devrel
+git clone https://github.com/benzhang568858050-cell/App-data-IOS-GP-.git
+cd App-data-IOS-GP-
 pip install -r requirements.txt
 
-# 1. Interactive setup (creates credential files, validates)
-bash setup.sh
+# 1. Configure your FoxData API key
+#    config/foxdata_creds.json: {"x_openapi_key": "..."}
+#    (trial access: hai.zhou@xiaoxitech.com)
 
-# Or manually: configure credentials (config/ dir, git-ignored)
-#    config/devto_creds.json: {"api_key": "..."}  → dev.to Settings → API Keys
-
-# 2. One-command automation: fetch data → plan → publish
-python3 auto.py
-
-# 3. AI ops engine: monitor → analyze → revive → interlink → strategy
-python3 auto.py devto-ops
+# 2. Pull real store data
+python3 clients/foxdata_client.py fetch
 ```
 
-Requires: Python 3.10+, `pip install requests twikit` (project-local `.deps/` supported).
+## 📚 Content Library (real API data)
 
-## 🏗 Architecture
+17 data-driven articles built from FoxData API snapshots — each with reproducible code:
 
-```mermaid
-flowchart TD
-    A[FoxData API<br/>market data] --> B[Content Factory<br/>AI articles + posts]
-    B --> C[Dev.to<br/>Forem API V1]
-    B --> D[X / Bluesky<br/>promo drafts]
-    C --> E[AI Ops Engine<br/>monitor / revive / strategy]
-    E --> F[GitHub Actions<br/>auto-schedule 8x/day]
-    F --> A
-```
-
-## 📁 Project Structure
-
-```
-├── clients/
-│   ├── devto_client.py    # Dev.to publishing (Forem API V1, frontmatter-safe)
-│   ├── devto_engine.py    # AI ops: monitor/analyze/revive/inject/report
-│   ├── devto_stats.py     # Engagement weekly report
-│   ├── foxdata_client.py  # FoxData Open API (x-openapi-key, pagination, retry)
-│   ├── x_client.py        # X/Twitter (twikit, cookie-based)
-│   └── ph_client.py       # Product Hunt (GraphQL)
-├── content/articles/      # Long-form articles (Markdown + frontmatter)
-├── posts/drafts/          # Short posts
-├── data/                  # Market data snapshots
-├── auto.py                # One-command entry
-└── .github/workflows/     # Hourly auto-publish pipeline
-```
+- **Market analysis**: SEA search demand (ID/VN/TH) · Global market scan · Stable vs Spike downloads
+- **Competitor teardowns**: Shopee Thailand (ranking, version cadence, ASA strategy, rating velocity) · Sensor Tower vs AppTweak vs FoxData
+- **Guides**: What is an app store data API · Market forecast · Ad creative intelligence · App revenue data · Keyword coverage gap analysis · ASO cost 2026
+- **Tutorials**: API vs scraper cost · Keyword gap framework
 
 ## 🔍 Keywords
 
-**App data APIs**: app data API · app download API · app revenue API · app store data API · google play data API · app market data API · app intelligence API · app analytics API
+**App data APIs**: app data API · app download API · app revenue API · app store data API · google play data API · app market data API · app intelligence API · iOS app data · Google Play data
 
 **Ads & ASO**: app ads data · Apple Search Ads (ASA) · ASO tools · app store optimization · keyword research API · app ranking API · download estimates API · revenue estimates API
 
-**Automation & DevRel**: social media automation · content automation pipeline · Dev.to automation · developer content ops · self-hosted automation · open-source alternative · DevRel toolkit · blog automation · markdown publishing · GitHub Actions workflow · LLM agents
-
----
-## 📊 Publish Status
-
-- **Dev.to**: 4 篇文章已发布
-- **X**: 0 条短帖
-- **Product Hunt**: 0 条更新
-- **文章库**: 17 篇 | **短帖池**: 4 条
-- 数据快照: `data/raw_latest.json`
-
-_自动更新: 2026-08-22_
-
-## 📚 Documentation & Links
-
-- [FoxData Open API docs](https://docs.foxdata.com/) — authentication (`x-openapi-key`), endpoints, error codes
-- [FoxData App Data API](https://foxdata.com/en/app-data-api/) — subscription plans
-- [Dev.to API (Forem V1)](https://docs.forem.com/api/) — the publishing channel
-
-### 📖 Ops playbooks (in this repo)
-
-- [Dev.to Growth Playbook](docs/devto-growth-playbook.md) — engagement & exposure strategy
-- [Developer Forums Distribution Matrix](docs/developer-forums-distribution-matrix.md) — where to share content
-- [Content Strategy Guide](docs/foxdata-content-guide.md) — content mix & cadence
-- [AI-SEO Guide](docs/ai-seo-guide.md) — AI-search citation optimization
-- [Open Source Tools Research](docs/devto-open-source-tools-research.md) — what to reuse vs build
-
-### 🛠 Installable Skills
+## 🛠 Installable Skill
 
 | Skill | What it does | Install |
 |---|---|---|
-| [devto-operations](skills/devto-operations/SKILL.md) | Dev.to publishing + AI ops engine (monitor/revive/strategy) | `npx skills add benzhang568858050-cell/foxdata-devrel` |
-| [foxdata-auto-publish](skills/foxdata-auto-publish/SKILL.md) | Data → content → multi-platform publishing | same package |
-| [x-automation](skills/x-automation/SKILL.md) | X account automation (matrix edition) | same package |
-
-> Battle-tested: running live on Dev.to — 5+ articles auto-published, hourly ops engine, 2-3 comments/day.
-
-## 🧠 Content Strategy
-
-Data-driven developer content, weekly cadence:
-- 40% market insights · 20% keyword intelligence · 15% API tutorials · 10% ranking reports · 10% competitor teardowns · 5% product updates
-- Best publish window: UTC 13:00–18:00 (data-backed)
-- Series interlinking + discussion prompts on every article
+| [foxdata-auto-publish](skills/foxdata-auto-publish/SKILL.md) | FoxData API data → content pipeline | `npx skills add benzhang568858050-cell/foxdata-devrel` |
 
 ## 📬 Contact
 
 - **FoxData API trial**: [hai.zhou@xiaoxitech.com](mailto:hai.zhou@xiaoxitech.com) (request trial access)
 - **Email**: [benzhang568858050@gmail.com](mailto:benzhang568858050@gmail.com)
 - **WeChat**: `wish_568858050`
-- **GitHub**: [benzhang568858050-cell](https://github.com/benzhang568858050-cell)
-- **Dev.to**: [@_a29a85391c475e16a6bed4](https://dev.to/_a29a85391c475e16a6bed4)
 
 ## 🤝 License
 
@@ -151,4 +83,4 @@ Data-driven developer content, weekly cadence:
 
 ---
 
-*Maintained by devrel-bot · auto-updated hourly*
+*Data: FoxData API snapshots. Get API access at [foxdata.com/en/app-data-api](https://foxdata.com/en/app-data-api/).*

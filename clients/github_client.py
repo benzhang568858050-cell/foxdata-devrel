@@ -37,13 +37,10 @@ def gen_readme():
     pub = json.loads(state.read_text()) if state.exists() else {}
 
     status_lines = [
-        f"- **Dev.to**: {len(pub.get('devto', []))} 篇文章已发布",
-        f"- **X**: {len(pub.get('x', []))} 条短帖",
-        f"- **Product Hunt**: {len(pub.get('ph', []))} 条更新",
-        f"- **文章库**: {len(articles)} 篇 | **短帖池**: {len(drafts)} 条",
-        "- 数据快照: `data/raw_latest.json`",
+        f"- **Content library**: {len(articles)} data articles (FoxData API snapshots)",
+        "- **Data snapshot**: `data/raw_latest.json`",
         "",
-        "_自动更新: " + datetime.now().strftime('%Y-%m-%d') + "_",
+        f"_Updated: {datetime.now().strftime('%Y-%m-%d')}_",
     ]
     status_block = "\n".join(status_lines)
 
