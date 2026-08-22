@@ -1,6 +1,6 @@
 # FoxData DevRel Content Hub
 
-Automated developer content operations hub for the FoxData App Data API — app market data (downloads, revenue, rankings, keyword coverage, search demand) turned into published developer content across Dev.to, X (Twitter), Bluesky, Threads and GitHub.
+Automated developer content operations hub for the FoxData App Store Data API — the API provides iOS (App Store) and Google Play app data: downloads, revenue, rankings, keyword coverage, search demand, competitor lists, ratings, version logs and ASA/ad intelligence across 200+ countries. This repo turns that data into published developer content across Dev.to, X, Bluesky, Threads and GitHub.
 
 ## What this repository is
 

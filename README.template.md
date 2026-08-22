@@ -4,7 +4,7 @@
 
 # 📨 FoxData API · DevRel Content Hub
 
-**Automated developer content operations powered by [FoxData API](https://foxdata.com/en/app-data-api/) — app market data → AI content → Dev.to publishing → growth ops.**
+**iOS & Google Play app store data API — downloads, revenue, rankings, keywords, ad & competitor intelligence via [FoxData API](https://foxdata.com/en/app-data-api/). Plus an open-source automation hub: store data → AI content → Dev.to publishing → growth ops.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/benzhang568858050-cell/App-data-IOS-GP-?style=flat&logo=github)](https://github.com/benzhang568858050-cell/App-data-IOS-GP-)
@@ -18,7 +18,7 @@
 
 ## 🚀 What is this?
 
-An open-source automation system that turns **app store market data** ([FoxData API](https://docs.foxdata.com/)) into published developer content — automatically. Built for teams promoting **mobile app data APIs / ASO tools** to the developer community.
+An open-source automation system around the **FoxData App Store Data API** ([docs](https://docs.foxdata.com/)) — the API delivers **iOS (App Store) and Google Play** app data: downloads, revenue, rankings, keyword coverage, search demand, competitor lists, ratings and version logs across 200+ countries. This repo turns that data into published developer content automatically.
 
 **Key features:**
 
