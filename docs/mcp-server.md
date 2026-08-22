@@ -4,7 +4,7 @@
 
 ## What is the FoxData MCP Server?
 
-The FoxData MCP Server connects AI assistants (Claude, ChatGPT, Cursor, Codex, and any MCP-compatible agent) directly to the FoxData App Store Data API. Instead of writing Python/curl calls, you ask in natural language:
+The FoxData MCP Server connects AI assistants (Claude, ChatGPT, Cursor, Codex, and any MCP-compatible agent) directly to the FoxData App Store Data API — **currently deployed for enterprise/internal use** (public release planned). Instead of writing Python/curl calls, you ask in natural language:
 
 > "What are the top 10 shopping apps in Thailand by downloads?"
 > "Compare keyword coverage of Shopee vs Temu in TH"
@@ -28,7 +28,7 @@ Add to your MCP client config (e.g., `~/.claude.json` / Claude Desktop / Cursor)
 }
 ```
 
-> Installation command and package name follow the official release — contact hai.zhou@xiaoxitech.com for trial access and the latest setup instructions.
+> Enterprise/internal deployment access: contact hai.zhou@xiaoxitech.com for setup instructions. Public release planned.
 
 ## Available tools
 
