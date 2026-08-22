@@ -885,13 +885,114 @@
           "checked_at": "2026-08-22T02:06:37.170192"
         }
       ]
+    },
+    {
+      "time": "2026-08-22T03:11:39.607957",
+      "snapshot": [
+        {
+          "id": 4457657,
+          "title": "Why Stable Downloads Beat Viral Spikes — Thailand's Download Chart Decoded",
+          "url": "https://dev.to/benzhang/why-stable-downloads-beat-viral-spikes-thailands-download-chart-decoded-4m7k",
+          "tags": [
+            "api",
+            "data",
+            "mobile",
+            "insights"
+          ],
+          "views": 0,
+          "reactions": 0,
+          "comments": 0,
+          "published_at": "2026-08-22T02:08:29.141Z",
+          "checked_at": "2026-08-22T03:11:39.607935"
+        },
+        {
+          "id": 4449040,
+          "title": "Shopee's Real Competitors Aren't SHEIN or Temu — The Data Says Lotus's and Big C",
+          "url": "https://dev.to/benzhang/shopees-real-competitors-arent-shein-or-temu-the-data-says-lotuss-and-big-c-2696",
+          "tags": [
+            "api",
+            "aso",
+            "data",
+            "ecommerce"
+          ],
+          "views": 0,
+          "reactions": 0,
+          "comments": 0,
+          "published_at": "2026-08-21T02:45:56.490Z",
+          "checked_at": "2026-08-22T03:11:39.607948"
+        },
+        {
+          "id": 4444304,
+          "title": "App Data API vs Building Your Own Scraper: Which Is Cheaper in 2026?",
+          "url": "https://dev.to/benzhang/app-data-api-vs-building-your-own-scraper-which-is-cheaper-in-2026-4pe7",
+          "tags": [
+            "api",
+            "data",
+            "aso",
+            "comparison"
+          ],
+          "views": 0,
+          "reactions": 0,
+          "comments": 0,
+          "published_at": "2026-08-20T11:31:52.975Z",
+          "checked_at": "2026-08-22T03:11:39.607950"
+        },
+        {
+          "id": 4442355,
+          "title": "Vietnam vs Thailand: Where Should Your App Marketing Budget Go in 2026?",
+          "url": "https://dev.to/benzhang/vietnam-vs-thailand-where-should-your-app-marketing-budget-go-in-2026-1e6d",
+          "tags": [
+            "api",
+            "aso",
+            "data",
+            "marketing"
+          ],
+          "views": 0,
+          "reactions": 0,
+          "comments": 0,
+          "published_at": "2026-08-20T08:33:08.655Z",
+          "checked_at": "2026-08-22T03:11:39.607952"
+        },
+        {
+          "id": 4442354,
+          "title": "Building a Southeast Asia App Market Watch with the FoxData API",
+          "url": "https://dev.to/benzhang/building-a-southeast-asia-app-market-watch-with-the-foxdata-api-420i",
+          "tags": [
+            "api",
+            "aso",
+            "mobile",
+            "data"
+          ],
+          "views": 0,
+          "reactions": 0,
+          "comments": 0,
+          "published_at": "2026-08-20T08:33:07.809Z",
+          "checked_at": "2026-08-22T03:11:39.607955"
+        }
+      ]
     }
   ],
   "latest": [
     {
+      "id": 4457657,
+      "title": "Why Stable Downloads Beat Viral Spikes — Thailand's Download Chart Decoded",
+      "url": "https://dev.to/benzhang/why-stable-downloads-beat-viral-spikes-thailands-download-chart-decoded-4m7k",
+      "tags": [
+        "api",
+        "data",
+        "mobile",
+        "insights"
+      ],
+      "views": 0,
+      "reactions": 0,
+      "comments": 0,
+      "published_at": "2026-08-22T02:08:29.141Z",
+      "checked_at": "2026-08-22T03:11:39.607935"
+    },
+    {
       "id": 4449040,
       "title": "Shopee's Real Competitors Aren't SHEIN or Temu — The Data Says Lotus's and Big C",
-      "url": "https://dev.to/_a29a85391c475e16a6bed4/shopees-real-competitors-arent-shein-or-temu-the-data-says-lotuss-and-big-c-2696",
+      "url": "https://dev.to/benzhang/shopees-real-competitors-arent-shein-or-temu-the-data-says-lotuss-and-big-c-2696",
       "tags": [
         "api",
         "aso",
@@ -902,12 +1003,12 @@
       "reactions": 0,
       "comments": 0,
       "published_at": "2026-08-21T02:45:56.490Z",
-      "checked_at": "2026-08-22T02:06:37.170178"
+      "checked_at": "2026-08-22T03:11:39.607948"
     },
     {
       "id": 4444304,
       "title": "App Data API vs Building Your Own Scraper: Which Is Cheaper in 2026?",
-      "url": "https://dev.to/_a29a85391c475e16a6bed4/app-data-api-vs-building-your-own-scraper-which-is-cheaper-in-2026-4pe7",
+      "url": "https://dev.to/benzhang/app-data-api-vs-building-your-own-scraper-which-is-cheaper-in-2026-4pe7",
       "tags": [
         "api",
         "data",
@@ -918,12 +1019,12 @@
       "reactions": 0,
       "comments": 0,
       "published_at": "2026-08-20T11:31:52.975Z",
-      "checked_at": "2026-08-22T02:06:37.170188"
+      "checked_at": "2026-08-22T03:11:39.607950"
     },
     {
       "id": 4442355,
       "title": "Vietnam vs Thailand: Where Should Your App Marketing Budget Go in 2026?",
-      "url": "https://dev.to/_a29a85391c475e16a6bed4/vietnam-vs-thailand-where-should-your-app-marketing-budget-go-in-2026-1e6d",
+      "url": "https://dev.to/benzhang/vietnam-vs-thailand-where-should-your-app-marketing-budget-go-in-2026-1e6d",
       "tags": [
         "api",
         "aso",
@@ -934,12 +1035,12 @@
       "reactions": 0,
       "comments": 0,
       "published_at": "2026-08-20T08:33:08.655Z",
-      "checked_at": "2026-08-22T02:06:37.170191"
+      "checked_at": "2026-08-22T03:11:39.607952"
     },
     {
       "id": 4442354,
       "title": "Building a Southeast Asia App Market Watch with the FoxData API",
-      "url": "https://dev.to/_a29a85391c475e16a6bed4/building-a-southeast-asia-app-market-watch-with-the-foxdata-api-420i",
+      "url": "https://dev.to/benzhang/building-a-southeast-asia-app-market-watch-with-the-foxdata-api-420i",
       "tags": [
         "api",
         "aso",
@@ -950,7 +1051,7 @@
       "reactions": 0,
       "comments": 0,
       "published_at": "2026-08-20T08:33:07.809Z",
-      "checked_at": "2026-08-22T02:06:37.170192"
+      "checked_at": "2026-08-22T03:11:39.607955"
     }
   ]
 }

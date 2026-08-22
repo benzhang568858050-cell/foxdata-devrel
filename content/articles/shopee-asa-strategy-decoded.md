@@ -109,3 +109,10 @@ Questions or collaboration? Reach me at [benzhang568858050@gmail.com](mailto:ben
 *Built with the open-source [foxdata-devrel automation hub](https://github.com/benzhang568858050-cell/App-data-IOS-GP-) ⚡*
 
 > ⭐ **Enjoy this data? [Star the project on GitHub](https://github.com/benzhang568858050-cell/App-data-IOS-GP-) — it builds this content automatically.**
+
+## More from this series
+
+- [Sea App Market Watch](https://dev.to/_a29a85391c475e16a6bed4/building-a-southeast-asia-app-market-watch-with-the-foxdata-api-420i)
+- [Vn Vs Th Market](https://dev.to/_a29a85391c475e16a6bed4/vietnam-vs-thailand-where-should-your-app-marketing-budget-go-in-2026-1e6d)
+- [Api Vs Scraper](https://dev.to/_a29a85391c475e16a6bed4/app-data-api-vs-building-your-own-scraper-which-is-cheaper-in-2026-4pe7)
+- [Shopee Real Competitors](https://dev.to/_a29a85391c475e16a6bed4/shopees-real-competitors-arent-shein-or-temu-the-data-says-lotuss-and-big-c-2696)
