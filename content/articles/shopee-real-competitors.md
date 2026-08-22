@@ -72,7 +72,6 @@ Are you tracking offline-to-online retail apps in your market? What did the data
 
 *Sample data from FoxData API snapshot, 2026-08-20. Get API access at [foxdata.com/en/app-data-api](https://foxdata.com/en/app-data-api/).*
 
-*Built with the open-source [foxdata-devrel automation hub](https://github.com/benzhang568858050-cell/foxdata-devrel) ⚡ — data → content → publishing, fully automated.*
 
 ## More from this series
 

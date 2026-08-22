@@ -126,7 +126,6 @@ Questions or collaboration? Reach me at [benzhang568858050@gmail.com](mailto:ben
 
 *Sources: Sensor Tower & AppTweak pricing pages and third-party estimates (Sonar, Vendr, Strataigize, AppFollow, 2026); FoxData API pricing ([foxdata.com/en/app-data-api](https://foxdata.com/en/app-data-api/)); FoxData Open API docs. Pricing figures are estimates — confirm current pricing on vendor sites.*
 
-*Built with the open-source [foxdata-devrel automation hub](https://github.com/benzhang568858050-cell/foxdata-devrel) ⚡ — data → content → publishing, fully automated.*
 
 > ⭐ **Enjoy this data? [Star the automation project on GitHub](https://github.com/benzhang568858050-cell/foxdata-devrel) — it builds this content automatically.**
 

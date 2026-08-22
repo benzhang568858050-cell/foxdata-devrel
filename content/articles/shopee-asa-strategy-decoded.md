@@ -107,7 +107,6 @@ Questions or collaboration? Reach me at [benzhang568858050@gmail.com](mailto:ben
 
 *Sources: FoxData API ASA keywords endpoint, 2026-08-20. Get API access at [foxdata.com/en/app-data-api](https://foxdata.com/en/app-data-api/).*
 
-*Built with the open-source [foxdata-devrel automation hub](https://github.com/benzhang568858050-cell/App-data-IOS-GP-) ⚡*
 
 > ⭐ **Enjoy this data? [Star the project on GitHub](https://github.com/benzhang568858050-cell/App-data-IOS-GP-) — it builds this content automatically.**
 

@@ -140,7 +140,6 @@ Questions or collaboration? Reach me at [benzhang568858050@gmail.com](mailto:ben
 
 *Sources: FoxData API — rank history (2026-08-14→20), version logs (90 days), keyword coverage, competitor list; snapshot date 2026-08-21. Get API access at [foxdata.com/en/app-data-api](https://foxdata.com/en/app-data-api/).*
 
-*Built with the open-source [foxdata-devrel automation hub](https://github.com/benzhang568858050-cell/foxdata-devrel) ⚡ — data → content → publishing, fully automated.*
 
 ## More from this series
 

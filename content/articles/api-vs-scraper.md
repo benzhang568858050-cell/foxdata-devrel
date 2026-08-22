@@ -96,7 +96,6 @@ Questions or collaboration? Reach me at [benzhang568858050@gmail.com](mailto:ben
 
 *Sources: FoxData API pricing ([foxdata.com/en/app-data-api](https://foxdata.com/en/app-data-api/)), FoxData Open API docs (docs.foxdata.com), engineering cost estimates based on standard market rates, 2026.*
 
-*Built with the open-source [foxdata-devrel automation hub](https://github.com/benzhang568858050-cell/foxdata-devrel) ⚡ — data → content → publishing, fully automated.*
 
 ## More from this series
 
