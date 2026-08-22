@@ -2,7 +2,7 @@
 title: "What Is an App Market Data API? Definition, Use Cases & Pricing (2026)"
 tags: api, data, aso, mobile
 series: FoxData API in Practice
-scheduled: 2026-08-23
+scheduled: 2026-08-22
 published: false
 ---
 

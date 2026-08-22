@@ -2,7 +2,7 @@
 title: "Shopee Thailand Rating Teardown: 4.7 Stars, 1.35M Reviews — What Daily Velocity Reveals"
 tags: api, aso, data, insights
 series: FoxData API in Practice
-scheduled: 2026-08-25
+scheduled: 2026-08-24
 published: false
 ---
 

@@ -2,7 +2,7 @@
 title: "Why Stable Downloads Beat Viral Spikes — Thailand's Download Chart Decoded"
 tags: api, data, mobile, insights
 series: FoxData API in Practice
-scheduled: 2026-08-22
+scheduled: 2026-08-23
 published: false
 ---
 

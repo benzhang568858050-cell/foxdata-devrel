@@ -2,7 +2,7 @@
 title: "Shopee's ASA Strategy: Bidding on Shein, 7-Eleven and Starbucks — Apple Search Ads Decoded"
 tags: api, asa, aso, data
 series: FoxData API in Practice
-scheduled: 2026-08-25
+scheduled: 2026-08-24
 published: false
 ---
 
