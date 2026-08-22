@@ -5,7 +5,7 @@ description: FoxData 数据内容自动化发布系统操作指南。当用户�
 
 # FoxData 内容自动化发布系统（foxdata-auto-publish）
 
-基于 FoxData Open API + foxdata-aichat MCP + 多平台发布客户端的**最简自动化方案**：一条命令完成「拉数据 → 内容 → 发布」。
+基于 FoxData Open API（**iOS App Store + Google Play 应用商店数据**：下载/收入/排名/关键词/竞品/评分/版本/ASA）+ foxdata-aichat MCP + 多平台发布客户端的**最简自动化方案**：一条命令完成「拉数据 → 内容 → 发布」。
 
 ## 系统位置
 
