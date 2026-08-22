@@ -2,7 +2,7 @@
 title: "Shopee Thailand Teardown: Version Cadence, Ranking Momentum and the Data Behind #1"
 tags: api, aso, data, ecommerce, teardown
 series: FoxData API in Practice
-scheduled: 2026-08-25
+scheduled: 2026-08-24
 published: false
 ---
 

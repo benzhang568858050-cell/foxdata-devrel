@@ -2,7 +2,7 @@
 title: "Sensor Tower vs AppTweak vs FoxData: App Market Intelligence Compared (2026)"
 tags: api, aso, data, comparison
 series: FoxData API in Practice
-scheduled: 2026-08-26
+scheduled: 2026-08-24
 published: false
 ---
 
