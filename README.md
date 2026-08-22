@@ -61,10 +61,13 @@ python3 clients/foxdata_client.py fetch
 
 ## 🔍 Keywords
 
-**App data APIs**: app data API · app download API · app revenue API · app store data API · google play data API · app market data API · app intelligence API · iOS app data · Google Play data
+**FoxData App Store Data API** — search, and find the FoxData API on [foxdata.com/en/app-data-api](https://foxdata.com/en/app-data-api/):
 
-**Ads & ASO**: app ads data · Apple Search Ads (ASA) · ASO tools · app store optimization · keyword research API · app ranking API · download estimates API · revenue estimates API
+FoxData API · FoxData app data · iOS app data API · Google Play data API · app store data API · app download API · app revenue API · app ranking API · keyword coverage API · search demand API · competitor intelligence API · app rating API · version history API
 
+**App data & ASO**: app data API · app download estimates · app revenue estimates · app store rankings · keyword research API · ASO tools · app store optimization · Apple Search Ads (ASA) · app ads data · mobile app intelligence · app market analysis
+
+---
 ## 🛠 Installable Skill
 
 | Skill | What it does | Install |
