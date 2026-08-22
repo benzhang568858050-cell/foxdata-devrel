@@ -7,9 +7,10 @@
 **Automated developer content operations powered by [FoxData API](https://foxdata.com/en/app-data-api/) — app market data → AI content → Dev.to publishing → growth ops.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-green.svg)](https://python.org)
-[![Automation](https://img.shields.io/badge/automation-GitHub%20Actions-orange.svg)](.github/workflows/publish.yml)
-[![Platform](https://img.shields.io/badge/platform-Dev.to%20%7C%20X%20%7C%20Product%20Hunt-blueviolet.svg)](https://dev.to)
+[![GitHub stars](https://img.shields.io/github/stars/benzhang568858050-cell/App-data-IOS-GP-?style=flat&logo=github)](https://github.com/benzhang568858050-cell/App-data-IOS-GP-)
+[![Last commit](https://img.shields.io/github/last-commit/benzhang568858050-cell/App-data-IOS-GP-)](https://github.com/benzhang568858050-cell/App-data-IOS-GP-/commits/main)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-green.svg)](https://python.org)
+[![Workflow](https://img.shields.io/github/actions/workflow/status/benzhang568858050-cell/App-data-IOS-GP-/publish.yml?label=auto-publish)](.github/workflows/publish.yml)
 
 *Self-hosted, free, one command: `python3 auto.py`*
 
@@ -113,11 +114,15 @@ flowchart TD
 - [AI-SEO Guide](docs/ai-seo-guide.md) — AI-search citation optimization
 - [Open Source Tools Research](docs/devto-open-source-tools-research.md) — what to reuse vs build
 
-### 🛠 Installable skills
+### 🛠 Installable Skills
 
-- [devto-operations](skills/devto-operations/SKILL.md) — `npx skills add benzhang568858050-cell/foxdata-devrel`
-- [foxdata-auto-publish](skills/foxdata-auto-publish/SKILL.md) — same package, two skills
-- [x-automation](skills/x-automation/SKILL.md) — X account automation (matrix edition)
+| Skill | What it does | Install |
+|---|---|---|
+| [devto-operations](skills/devto-operations/SKILL.md) | Dev.to publishing + AI ops engine (monitor/revive/strategy) | `npx skills add benzhang568858050-cell/foxdata-devrel` |
+| [foxdata-auto-publish](skills/foxdata-auto-publish/SKILL.md) | Data → content → multi-platform publishing | same package |
+| [x-automation](skills/x-automation/SKILL.md) | X account automation (matrix edition) | same package |
+
+> Battle-tested: running live on Dev.to — 5+ articles auto-published, hourly ops engine, 2-3 comments/day.
 
 ## 🧠 Content Strategy
 
