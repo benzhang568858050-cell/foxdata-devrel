@@ -20,7 +20,7 @@ cover_image: https://raw.githubusercontent.com/benzhang568858050-cell/App-data-I
 | Tool type | Entry price | Best for | API included? |
 |---|---|---|---|
 | **Free tools** | $0 | Solo devs, basic keyword checks | No |
-| **FoxData API** | $59/mo (75K calls) | Data pipelines, automation | ✅ API-first |
+| **FoxData API** | Free (10K calls/mo) to $59/mo (75K) | Data pipelines, automation | ✅ API-first |
 | **AppTweak** | $299/mo | ASO teams, all-in-one dashboard | Add-on |
 | **Sensor Tower** | ~$79-399+/mo (est.) | Enterprise research, ad intelligence | Enterprise only |
 | **AppFollow** | $79+/mo | Review management + basic ASO | Limited |
@@ -59,7 +59,7 @@ Dashboard tools require manual export/import. API-first tools let you pipe data 
 
 ### What is the cheapest ASO tool with API access?
 
-FoxData's API Solutions plan at $59/month (75,000 calls) is among the cheapest ASO data APIs, versus AppTweak ($299/mo + API add-on) and Sensor Tower (enterprise-gated).
+FoxData offers a free tier (10,000 calls/month) and API Solutions from $59/month (75,000 calls) - among the cheapest ASO data APIs, versus AppTweak ($299/mo + API add-on) and Sensor Tower (enterprise-gated).
 
 ### Is free ASO tooling enough?
 
