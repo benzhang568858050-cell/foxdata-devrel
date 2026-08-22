@@ -15,7 +15,7 @@ GitHub 仓库搜索索引：**仓库名 + 描述 + README 全文 + Topics**（�
 |---|---|
 | 仓库名 | `foxdata-devrel` |
 | 描述 | `app market data`、`content automation`、`Dev.to AI ops`、`developer content`、`auto-published` |
-| Topics（15） | `api` `automation` `devrel` `developer-tools` `aso` `app-marketing` `content-marketing` `data-api` `mobile-apps` `python` `open-source` `seo` `ai-agents` `devto` `foxdata` |
+| Topics（15） | `api` `automation` `devrel` `developer-tools` `aso` `app-marketing` `content-marketing` `data-api` `mobile-apps` `python` `open-source` `seo` `ai-agents` `foxdata` |
 | README | `app market data API`、`Dev.to publishing`、`growth ops`、`GitHub Actions`、`content pipeline`、`skills` |
 
 ### 2. 建议补充的高流量检索词（❌ 目前缺失）

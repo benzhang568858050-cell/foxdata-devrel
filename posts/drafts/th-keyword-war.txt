@@ -1,5 +1,0 @@
-TH e-commerce keyword war (Aug 2026): Temu covers 16.8K keywords, SHEIN 12K, Shopee only 7.4K — yet Shopee still ranks #1.
-
-Keyword coverage is a leading indicator. When Temu's coverage converts, the #1 spot moves. Track it weekly via FoxData API.
-
-#ASO #SEA #AppMarketing

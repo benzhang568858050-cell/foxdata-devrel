@@ -128,7 +128,7 @@ published: false
 ## 发布节奏与监控
 
 - 每周 1-2 篇 AI-SEO 结构文章（与现有系列并行）
-- 每月用 devto_stats 检查互动率；AI 引用情况可用 Otterly/Peec 或手动查 ChatGPT/Perplexity
+- 每月检查内容互动率；AI 引用情况可用 Otterly/Peec 或手动查 ChatGPT/Perplexity
 - 内容更新：季度刷新旧文（改数据日期、加新数据）
 
 ## 机器可读文件（已配置）

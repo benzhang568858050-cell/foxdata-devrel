@@ -22,7 +22,7 @@
 | **Threads** | ⭐⭐⭐ | 品牌存在感 + 简单数据梗图 | 大众流量，硬核 API 内容效果一般；`bs-automation` 已支持 |
 | **Reddit** | ⭐⭐⭐ | r/ASO、r/AppStoreOptimization、r/marketing、r/SideProject 发数据洞察帖 | 注意 subreddit 推广规则：发"数据发现"而非广告，评论区自然引流 |
 | **Product Hunt** | ⭐⭐ | API 上新/大版本更新时发布 | 低频节点型投放 |
-| **Dev.to / HN** | ⭐⭐ | 技术向教程（"用 Python 调 FoxData API 做面板"） | 可选 |
+| **技术社区** | ⭐⭐ | 技术向教程（"用 Python 调 FoxData API 做面板"） | 可选 |
 
 ### 内容语气建议
 - 英文为主（受众全球化），**避免中文直译腔**
