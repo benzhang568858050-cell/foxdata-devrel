@@ -27,7 +27,7 @@ Automated developer content operations hub for the FoxData App Data API — app 
   - SEA App Search Demand 2026: Indonesia vs Vietnam vs Thailand
   - Building a SEA App Market Watch with the FoxData API
 - Dev.to profile: https://dev.to/_a29a85391c475e16a6bed4
-- Contact: benzhang568858050@gmail.com
+- Contact: benzhang568858050@gmail.com | WeChat: wish_568858050
 
 ## Sample data (snapshot 2026-08-20)
 
