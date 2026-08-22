@@ -65,6 +65,8 @@ python3 clients/foxdata_client.py fetch
 
 FoxData API · FoxData app data · iOS app data API · Google Play data API · app store data API · app download API · app revenue API · app ranking API · keyword coverage API · search demand API · competitor intelligence API · app rating API · version history API
 
+**MCP (AI-native)**: app data MCP server · ASO MCP · app market MCP · app store data MCP · app intelligence MCP · keyword MCP server · competitor MCP · MCP for Claude/ChatGPT/Cursor
+
 **App data & ASO**: app data API · app download estimates · app revenue estimates · app store rankings · keyword research API · ASO tools · app store optimization · Apple Search Ads (ASA) · app ads data · mobile app intelligence · app market analysis
 
 ---

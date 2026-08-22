@@ -1,6 +1,6 @@
-# FoxData MCP Server — Query App Store Data from Any AI Assistant
+# FoxData MCP Server — App Data MCP / ASO MCP / App Market MCP for AI Assistants
 
-> Model Context Protocol (MCP) server for the FoxData App Store Data API (iOS + Google Play).
+> Model Context Protocol (MCP) server for the FoxData App Store Data API (iOS + Google Play). An app data MCP, ASO MCP and app market MCP in one server.
 
 ## What is the FoxData MCP Server?
 

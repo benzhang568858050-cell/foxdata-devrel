@@ -1,12 +1,12 @@
 ---
-title: "FoxData MCP Server: Enterprise App Store Data for AI Assistants"
+title: "FoxData MCP Server: App Data MCP & ASO MCP for Enterprise AI Assistants"
 tags: api, ai, data, mcp
 series: FoxData API in Practice
 scheduled: 2026-08-31
 published: false
 ---
 
-# FoxData MCP Server: Enterprise App Store Data for AI Assistants
+# FoxData MCP Server: App Data MCP & ASO MCP for Enterprise AI Assistants
 
 > Last updated: 2026-08-22 · Data: FoxData API + MCP toolset
 
