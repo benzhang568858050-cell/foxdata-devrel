@@ -42,7 +42,7 @@ DEFAULT_STRATEGY = {
     "weekly_target": 2,
     "low_engagement_threshold": {"hours": 24, "views": 100, "rate": 3.0},
     "revive": {
-        "enabled": True,
+        "enabled": False,
         "max_per_article": 1,      # 每篇文章最多救活 1 次（防频繁改标题）
         "hours": 24,               # 发布 24h 后才考虑救活
         "views_below": 100,        # views 低于该值触发
@@ -198,7 +198,8 @@ def revive():
     strat = load_strategy()
     cfg = strat.get("revive", {})
     if not cfg.get("enabled", True):
-        print("[revive] 已禁用")
+        print("[revive] 已禁用（默认关闭，防标题篡改）")
+        return
         return
     stats = load_stats()
     arts = stats.get("latest", [])
