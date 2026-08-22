@@ -72,7 +72,7 @@ Forecasts are direction-and-confidence statements, not precise numbers. Three ag
 
 ### Can I forecast with a free API tier?
 
-Yes — FoxData's free tier (10,000 calls/month) covers a weekly forecast loop for a few markets. The $59/month tier (75K calls) scales to multi-country coverage.
+Yes — the $59/month tier (75K calls) covers a weekly forecast loop for several markets; for trial access, contact hai.zhou@xiaoxitech.com.
 
 ### What is the best leading indicator for app demand?
 

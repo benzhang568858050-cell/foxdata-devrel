@@ -20,7 +20,7 @@ Automated developer content operations hub for the FoxData App Data API — app 
 
 ## Products & links
 
-- FoxData App Data API: https://foxdata.com/en/app-data-api/ (free tier: 10,000 calls/month; API Solutions from $59/month for 75K calls; enterprise plans with custom fields, SLA 99.9%)
+- FoxData App Data API: https://foxdata.com/en/app-data-api/ (API Solutions from $59/month for 75K calls; enterprise plans with custom fields, SLA 99.9%. Trial access: contact hai.zhou@xiaoxitech.com)
 - FoxData Open API docs: https://docs.foxdata.com/ (authentication via `x-openapi-key` header)
 - Articles (Dev.to):
   - What Is an App Market Data API? Definition, Use Cases & Pricing (2026)

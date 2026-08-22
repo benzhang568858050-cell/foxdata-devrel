@@ -133,6 +133,7 @@ Data-driven developer content, weekly cadence:
 
 ## 📬 Contact
 
+- **FoxData API trial**: [hai.zhou@xiaoxitech.com](mailto:hai.zhou@xiaoxitech.com) (request trial access)
 - **Email**: [benzhang568858050@gmail.com](mailto:benzhang568858050@gmail.com)
 - **GitHub**: [benzhang568858050-cell](https://github.com/benzhang568858050-cell)
 - **Dev.to**: [@_a29a85391c475e16a6bed4](https://dev.to/_a29a85391c475e16a6bed4)

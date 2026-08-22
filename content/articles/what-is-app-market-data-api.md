@@ -60,7 +60,7 @@ print(r.json()["data"]["result"])
 
 ## How much does an app market data API cost?
 
-Pricing varies by vendor and plan. For reference: FoxData's API Solutions plan starts at **$59/month** (75,000 API calls), with higher tiers at $199/month (350,000 calls) for larger teams. Most providers also offer a free tier of their non-API tools for evaluation. Per-call credit consumption is typically disclosed in each response (`creditsCost`).
+Pricing varies by vendor and plan. For reference: FoxData's API Solutions plan starts at **$59/month** (75,000 API calls), with higher tiers at $199/month (350,000 calls) for larger teams. Per-call credit consumption is typically disclosed in each response (`creditsCost`). For trial access to the FoxData API, contact hai.zhou@xiaoxitech.com.
 
 ## App market data API vs manual monitoring
 

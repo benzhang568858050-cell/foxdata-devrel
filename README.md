@@ -101,7 +101,7 @@ flowchart TD
 - **Dev.to**: 4 篇文章已发布
 - **X**: 0 条短帖
 - **Product Hunt**: 0 条更新
-- **文章库**: 13 篇 | **短帖池**: 4 条
+- **文章库**: 17 篇 | **短帖池**: 4 条
 - 数据快照: `data/raw_latest.json`
 
 _自动更新: 2026-08-22_
@@ -139,6 +139,7 @@ Data-driven developer content, weekly cadence:
 
 ## 📬 Contact
 
+- **FoxData API trial**: [hai.zhou@xiaoxitech.com](mailto:hai.zhou@xiaoxitech.com) (request trial access)
 - **Email**: [benzhang568858050@gmail.com](mailto:benzhang568858050@gmail.com)
 - **GitHub**: [benzhang568858050-cell](https://github.com/benzhang568858050-cell)
 - **Dev.to**: [@_a29a85391c475e16a6bed4](https://dev.to/_a29a85391c475e16a6bed4)
