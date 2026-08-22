@@ -179,7 +179,11 @@ async def run():
             if state["count"] >= target_count:
                 break
             try:
-                await page.goto(article["url"], wait_until="networkidle", timeout=30000)
+                await page.goto(article["url"], wait_until="domcontentloaded", timeout=60000)
+                page_title = await page.title()
+                if "404" in page_title or "Page Not Found" in page_title:
+                    log(f"⚠️ 文章已失效(404): {article['title'][:40]}")
+                    continue
                 read_time = random.randint(READ_TIME_MIN, READ_TIME_MAX)
                 log(f"📖 阅读: {article['title'][:50]}（{read_time}s）")
                 for _ in range(random.randint(2, 4)):
@@ -187,11 +191,11 @@ async def run():
                     await asyncio.sleep(random.uniform(3, 8))
                 await asyncio.sleep(read_time)
 
-                comment_box = await page.query_selector("textarea[id*='comment'], textarea[placeholder*='comment'], div[contenteditable='true']")
+                comment_box = await page.query_selector("textarea.comment-textarea, textarea.crayons-textfield.comment-textarea")
                 if not comment_box:
                     await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
                     await asyncio.sleep(2)
-                    comment_box = await page.query_selector("textarea[id*='comment'], textarea[placeholder*='comment'], div[contenteditable='true']")
+                    comment_box = await page.query_selector("textarea.comment-textarea, textarea.crayons-textfield.comment-textarea")
                 if not comment_box:
                     log(f"⚠️ 未找到评论框: {article['title'][:40]}")
                     continue
@@ -205,10 +209,10 @@ async def run():
                         await asyncio.sleep(random.uniform(0.5, 2))
                 await asyncio.sleep(random.uniform(2, 5))
 
-                submit = await page.query_selector("button[type='submit'], button:has-text('Submit'), button:has-text('Post')")
+                submit = await page.query_selector("button:has-text('Submit')")
                 if submit:
                     await submit.click()
-                    await asyncio.sleep(3)
+                    await asyncio.sleep(8)
                     content = await page.content()
                     if comment_text[:30] in content:
                         state["commented"].append({"id": article["id"], "url": article["url"],

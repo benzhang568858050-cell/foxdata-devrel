@@ -52,6 +52,9 @@ jobs:
       - name: X 热点采集（无凭据时自动跳过）
         run: python3 clients/collect_hotspots.py || true
 
+      - name: Dev.to 评论互动（每日限频 2-3 篇，保守策略）
+        run: python3 clients/devto_commenter.py || true
+
       - name: 更新 README 索引
         run: python3 clients/github_client.py readme || true
 
