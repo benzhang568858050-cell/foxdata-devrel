@@ -4,6 +4,7 @@ tags: api, data, aso, insights
 series: FoxData API in Practice
 scheduled: 2026-08-22
 published: false
+cover_image: https://raw.githubusercontent.com/benzhang568858050-cell/App-data-IOS-GP-/main/assets/covers/sea-search-demand-2026.png
 ---
 
 # Southeast Asia App Search Demand 2026: Indonesia vs Vietnam vs Thailand (Real Data)

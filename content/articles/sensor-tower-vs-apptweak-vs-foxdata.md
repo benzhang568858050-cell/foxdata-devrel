@@ -4,6 +4,7 @@ tags: api, aso, data, comparison
 series: FoxData API in Practice
 scheduled: 2026-08-25
 published: false
+cover_image: https://raw.githubusercontent.com/benzhang568858050-cell/App-data-IOS-GP-/main/assets/covers/sensor-tower-vs-apptweak-vs-foxdata.png
 ---
 
 # Sensor Tower vs AppTweak vs FoxData: App Market Intelligence Compared (2026)

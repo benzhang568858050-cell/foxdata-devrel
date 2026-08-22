@@ -1,9 +1,10 @@
 ---
 title: "Keyword Coverage Gap Analysis: How to Find ASO Opportunities Your Competitors Miss"
-tags: api, aso, data, tutorial
+tags: api, aso, data, showdev
 series: FoxData API in Practice
 scheduled: 2026-08-26
 published: false
+cover_image: https://raw.githubusercontent.com/benzhang568858050-cell/App-data-IOS-GP-/main/assets/covers/keyword-coverage-gap-analysis.png
 ---
 
 # Keyword Coverage Gap Analysis: How to Find ASO Opportunities Your Competitors Miss

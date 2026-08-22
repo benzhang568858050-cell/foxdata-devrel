@@ -4,6 +4,7 @@ tags: api, aso, data, ecommerce, teardown
 series: FoxData API in Practice
 scheduled: 2026-08-24
 published: false
+cover_image: https://raw.githubusercontent.com/benzhang568858050-cell/App-data-IOS-GP-/main/assets/covers/shopee-thailand-teardown.png
 ---
 
 # Shopee Thailand Teardown: Version Cadence, Ranking Momentum and the Data Behind #1

@@ -4,6 +4,7 @@ tags: api, asa, aso, data
 series: FoxData API in Practice
 scheduled: 2026-08-24
 published: false
+cover_image: https://raw.githubusercontent.com/benzhang568858050-cell/App-data-IOS-GP-/main/assets/covers/shopee-asa-strategy-decoded.png
 ---
 
 # Shopee's ASA Strategy: Bidding on Shein, 7-Eleven and Starbucks — Apple Search Ads Decoded

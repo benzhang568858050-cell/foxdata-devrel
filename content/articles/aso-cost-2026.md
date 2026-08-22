@@ -4,6 +4,7 @@ tags: api, aso, data, comparison
 series: FoxData API in Practice
 scheduled: 2026-08-25
 published: false
+cover_image: https://raw.githubusercontent.com/benzhang568858050-cell/App-data-IOS-GP-/main/assets/covers/aso-cost-2026.png
 ---
 
 # App Store Optimization Cost in 2026: Tools, APIs, and the Real Price of ASO Data

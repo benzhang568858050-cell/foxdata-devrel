@@ -4,6 +4,7 @@ tags: api, aso, data, insights
 series: FoxData API in Practice
 scheduled: 2026-08-24
 published: false
+cover_image: https://raw.githubusercontent.com/benzhang568858050-cell/App-data-IOS-GP-/main/assets/covers/shopee-rating-velocity-teardown.png
 ---
 
 # Shopee Thailand Rating Teardown: 4.7 Stars, 1.35M Reviews — What Daily Velocity Reveals
